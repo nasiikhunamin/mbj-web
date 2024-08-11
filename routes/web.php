@@ -15,4 +15,82 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.home');
+})->name('home');
+
+// Profile Routes
+Route::prefix('profile')->group(function () {
+    Route::get('/tentang-perusahaan', function () {
+        return view('pages.profile.tentang-perusahaan');
+    })->name('profile.tentang-perusahaan');
+
+    Route::get('/legalitas', function () {
+        return view('pages.profile.legalitas');
+    })->name('profile.legalitas');
+
+    Route::get('/izin-so', function () {
+        return view('pages.profile.izin-so');
+    })->name('profile.izin-so');
+
+    Route::get('/struktur-organisasi', function () {
+        return view('pages.profile.struktur-organisasi');
+    })->name('profile.struktur-organisasi');
+
+    Route::get('/lokasi-pendidikan', function () {
+        return view('pages.profile.lokasi-pendidikan');
+    })->name('profile.lokasi-pendidikan');
 });
+
+// Informasi Routes
+Route::prefix('informasi')->group(function () {
+    Route::get('/pendaftaran', function () {
+        return view('pages.informasi.pendaftaran');
+    })->name('informasi.pendaftaran');
+
+    Route::get('/prospek-karir', function () {
+        return view('pages.informasi.prospek-karir');
+    })->name('informasi.prospek-karir');
+
+    Route::get('/apa-yang-dipelajari', function () {
+        return view('pages.informasi.apa-yang-dipelajari');
+    })->name('informasi.apa-yang-dipelajari');
+
+    Route::get('/fasilitas', function () {
+        return view('pages.informasi.fasilitas');
+    })->name('informasi.fasilitas');
+
+    Route::get('/sertifikasi', function () {
+        return view('pages.informasi.sertifikasi');
+    })->name('informasi.sertifikasi');
+
+    Route::get('/perbedaan-magang-tokutei-ginou', function () {
+        return view('pages.informasi.perbedaan-magang-tokutei-ginou');
+    })->name('informasi.perbedaan-magang-tokutei-ginou');
+
+    Route::get('/biaya-hidup-di-jepang', function () {
+        return view('pages.informasi.biaya-hidup-di-jepang');
+    })->name('informasi.biaya-hidup-di-jepang');
+});
+
+// Komunitas Routes
+Route::prefix('komunitas')->group(function () {
+    Route::get('/testimoni-alumni', function () {
+        return view('pages.komunitas.testimoni-alumni');
+    })->name('komunitas.testimoni-alumni');
+
+    Route::get('/galeri', function () {
+        return view('pages.komunitas.galeri');
+    })->name('komunitas.galeri');
+
+    Route::get('/faq', function () {
+        return view('pages.komunitas.faq');
+    })->name('komunitas.faq');
+
+    Route::get('/proses-pindah-kerja', function () {
+        return view('pages.komunitas.proses-pindah-kerja');
+    })->name('komunitas.proses-pindah-kerja');
+});
+
+// Daftar Sekarang Route
+Route::get('/daftar', function () {
+    return view('pages.daftar');
+})->name('daftar');

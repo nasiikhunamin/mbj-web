@@ -866,6 +866,129 @@
 }
 /*** Contact End ***/
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.h_blog_item .h_blog_img {
+    position: relative;
+    z-index: 10;
+    margin-left: 50px;
+}
+
+.h_blog_item .col-lg-6 {
+    vertical-align: middle;
+    align-self: center;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.h_blog_item .h_blog_text {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.h_blog_item .h_blog_text .h_blog_text_inner.right {
+    margin-left: -104px;
+    position: relative;
+    z-index: 1;
+    border: 10px solid #f9f9ff;
+}
+
+.h_blog_item .h_blog_text .h_blog_text_inner.left {
+    position: relative;
+    z-index: 2;
+}
+
+.h_blog_item .h_blog_text .h_blog_text_inner {
+    background: #fff;
+    padding: 120px 115px;
+    border-radius: 10px;
+}
+
+.h_blog_item .h_blog_text .h_blog_text_inner h4 {
+    color: #002347;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.h_blog_item .h_blog_text .h_blog_text_inner p {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+    .h_blog_item .h_blog_img {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .h_blog_item .h_blog_maps {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .h_blog_item .h_blog_text .h_blog_text_inner.right {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .h_blog_item .h_blog_text .h_blog_text_inner {
+        padding: 30px 15px;
+    }
+}
+
+.feature_area {
+    padding-bottom: 100px;
+}
+
+.section_gap_top {
+    padding-top: 130px;
+}
+
+.title-bg {
+    background: #002347;
+}
+
+.main_title {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.main_title p {
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+.single_feature {
+    position: relative;
+    background: #f9f9ff;
+    padding: 40px 36px;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
 
 /*** Footer Start ***/
 .footer {
