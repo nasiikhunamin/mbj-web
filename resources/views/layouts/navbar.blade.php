@@ -9,9 +9,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                <a href="{{ route('home') }}" class="nav-item nav-link {{ Request::routeIs('home') ? 'active' : '' }}">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Profile</span></a>
+                    <a href="#" class="nav-link {{ Request::routeIs('profile*') ? 'active' : '' }}" data-bs-toggle="dropdown"><span class="dropdown-toggle">Profile</span></a>
                     <div class="dropdown-menu m-0">
                         <a href="{{ route('profile.tentang-perusahaan') }}" class="dropdown-item">Tentang Perusahaan</a>
                         <a href="{{ route('profile.legalitas') }}" class="dropdown-item">Legalitas</a>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Informasi</span></a>
+                    <a href="#" class="nav-link {{ Request::routeIs('informasi*') ? 'active' : '' }}" data-bs-toggle="dropdown"><span class="dropdown-toggle">Informasi</span></a>
                     <div class="dropdown-menu m-0">
                         <a href="{{ route('informasi.pendaftaran') }}" class="dropdown-item">Pendaftaran</a>
                         <a href="{{ route('informasi.prospek-karir') }}" class="dropdown-item">Prospek Karir</a>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Komunitas</span></a>
+                    <a href="#" class="nav-link {{ Request::routeIs('komunitas*') ? 'active' : '' }}" data-bs-toggle="dropdown"><span class="dropdown-toggle">Komunitas</span></a>
                     <div class="dropdown-menu m-0">
                         <a href="{{ route('komunitas.testimoni-alumni') }}" class="dropdown-item">Testimoni Alumni</a>
                         <a href="{{ route('komunitas.galeri') }}" class="dropdown-item">Galeri</a>
