@@ -81,7 +81,8 @@
                 <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
                     <h5 class="sub-title pe-3">Tentang Perusahaan</h5>
                     <h1 class="display-5 mb-4">Kami adalah LPK Jepang Terpercaya.</h1>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto consectetur iusto perferendis blanditiis assumenda dignissimos, commodi fuga culpa earum explicabo libero sint est mollitia saepe! Sequi asperiores rerum nemo!</p>
+                    <p class="mb-4">LPK Matahari Bulan Jepang Indonesia merupakan Lembaga pendidikan Bahasa Jepang dan pelatihan kerja untuk mempersiapkan tenaga kerja yang handal khususnya ke Jepang. LPK Matahari Bulan Jepang Indonesia didirikan sejak  20 Mei 2023 dan telah mendapatkan izin usaha dari kementerian ketenagakerjaan RI di tahun 2023</p>
+                    <p class="mb-4">Dengan semangat untuk mengurangi angka pengangguran di Indonesia dan demi membantu kebutuhan Negara Jepang dalam memenuhi jumlah tenaga kerjanya, kami tidak ingin melewatkan kesempatan untuk  mewadahi supply dan demand yang dibutuhkan oleh kedua negara tersebut.</p>
                     <div class="row gy-4 align-items-center">
                         <div class="col-12 col-sm-6 d-flex align-items-center">
                             <i class="fas fa-map-marked-alt fa-3x text-secondary"></i>
@@ -117,7 +118,7 @@
                                 </div>
                                 <div class="d-flex flex-column justify-content-center">
                                     <span class="text-primary">Ingin Berdiskusi Lebih Lanjut?</span>
-                                    <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Admin: +628123456789</span>
+                                    <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Admin: +62 852‑8397‑2464</span>
                                 </div>
                             </div>
                         </div>
@@ -139,47 +140,36 @@
                 <p class="mb-0">MBJ Indonesia sudah teruji menghasilkan para lulusan yang kompeten di industri melalui program bootcamp!</p>
             </div>
             <div class="row g-4 justify-content-center text-center">
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="feature-item text-center p-4">
-                        <div class="feature-icon p-3 mb-4">
-                            <i class="fas fa-dollar-sign fa-4x text-primary"></i>
-                        </div>
-                        <div class="feature-content d-flex flex-column">
-                            <h5 class="mb-3">Dana Talangan</h5>
-                            <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="feature-item text-center p-4">
                         <div class="feature-icon p-3 mb-4">
                             <i class="fas fa-user-clock fa-4x text-primary"></i>
                         </div>
                         <div class="feature-content d-flex flex-column">
                             <h5 class="mb-3">Belajar Intensif</h5>
-                            <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            <p class="mb-3">Siswa difokuskan belajar secara intensif dari pukul 08:00 - 16:00 WIB untuk menjadi pemagang ke Jepang</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="feature-item text-center p-4">
                         <div class="feature-icon p-3 mb-4">
                             <i class="fas fa-atlas fa-4x text-primary"></i>
                         </div>
                         <div class="feature-content d-flex flex-column">
-                            <h5 class="mb-3">Silabus Sesuai</h5>
-                            <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            <h5 class="mb-3">Silabus dan Kurikulum Sesuai</h5>
+                            <p class="mb-3">Silabus dan kurikulum dirancang dan selalu disesuaikan dengan kebutuhan dunia kerja</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="feature-item text-center p-4">
                         <div class="feature-icon p-3 mb-4">
                             <i class="fas fa-users fa-4x text-primary"></i>
                         </div>
                         <div class="feature-content d-flex flex-column">
-                            <h5 class="mb-3">Lulusan Terbanyak</h5>
-                            <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            <h5 class="mb-3">Pembekalan Budaya dan Etos Kerja Jepang</h5>
+                            <p class="mb-3">Setiap siswa dibekali dengan pembelajaran tentang Budaya dan Etos Kerja Jepang untuk bisa berkembang</p>
                         </div>
                     </div>
                 </div>
@@ -196,12 +186,12 @@
                     <h5 class="sub-title text-primary px-3">Apa Kata Mereka</h5>
                 </div>
                 <h1 class="display-5 mb-4">Apa Yang Alumni Kita Katakan</h1>
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+                
             </div>
             <div class="owl-carousel testimonial-carousel wow zoomInDown" data-wow-delay="0.2s">
                 <div class="testimonial-item">
                     <div class="testimonial-content p-4 mb-5">
-                        <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.
+                        <p class="fs-5 mb-0">Fasilitator/instruktur sangat berkompeten. Materi yang disampaikan dapat dicerna dengan sangat baik oleh kami sehingga sesuai dengan apa yang kami hadapi di lapangan dengan materi di program pelatihan ini 
                         </p>
                         <div class="d-flex justify-content-end">
                             <i class="fas fa-star text-secondary"></i>
@@ -213,17 +203,17 @@
                     </div>
                     <div class="d-flex">
                         <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
-                            <img class="img-fluid rounded-circle" src="{{ asset('asset/img/testimonial-1.jpg') }}" alt="img">
+                            <img class="img-fluid rounded-circle" src="{{ asset('asset/img/testimoni1.jpg') }}" alt="img">
                         </div>
                         <div class="my-auto">
-                            <h5>Person Name</h5>
-                            <p class="mb-0">Profession</p>
+                            <h5>Susanto</h5>
+                            <p class="mb-0">Construction Job</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-content p-4 mb-5">
-                        <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.
+                        <p class="fs-5 mb-0">Instruktur memiliki pengalaman yang cukup luas sesuai dengan bidangnya. Dan semua fasilitas yang diberikan oleh LPK Matahari Bulan Jepang Indonesia selama pelatihan sudah memuaskan.
                         </p>
                         <div class="d-flex justify-content-end">
                             <i class="fas fa-star text-secondary"></i>
@@ -235,17 +225,17 @@
                     </div>
                     <div class="d-flex">
                         <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
-                            <img class="img-fluid rounded-circle" src="{{ asset('asset/img/testimonial-2.jpg') }}" alt="img">
+                            <img class="img-fluid rounded-circle" src="{{ asset('asset/img/testimoni2.jpg') }}" alt="img">
                         </div>
                         <div class="my-auto">
-                            <h5>Person Name</h5>
-                            <p class="mb-0">Profession</p>
+                            <h5>Farhan</h5>
+                            <p class="mb-0">Electrical Welding</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-content p-4 mb-5">
-                        <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.
+                        <p class="fs-5 mb-0">Pelatihan di LPK Matahari Bulan Jepang Indonesia itu seru dan tidak membosankan. Instruktur sangat ramah dan membantu saya meningkatkan skill bahasa saya. Instruktur sangat proaktif, memberikan penjelasan yang rinci dan mudah dipahami sehingga saya lebih mudah paham.
                         </p>
                         <div class="d-flex justify-content-end">
                             <i class="fas fa-star text-secondary"></i>
@@ -257,11 +247,11 @@
                     </div>
                     <div class="d-flex">
                         <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
-                            <img class="img-fluid rounded-circle" src="{{ asset('asset/img/testimonial-3.jpg') }}" alt="img">
+                            <img class="img-fluid rounded-circle" src="{{ asset('asset/img/testimoni3.jpg') }}" alt="img">
                         </div>
                         <div class="my-auto">
-                            <h5>Person Name</h5>
-                            <p class="mb-0">Profession</p>
+                            <h5>Khisabu</h5>
+                            <p class="mb-0">Building Construction</p>
                         </div>
                     </div>
                 </div>

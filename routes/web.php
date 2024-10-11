@@ -50,9 +50,9 @@ Route::prefix('informasi')->group(function () {
         return view('pages.informasi.prospek-karir');
     })->name('informasi.prospek-karir');
 
-    Route::get('/apa-yang-dipelajari', function () {
-        return view('pages.informasi.apa-yang-dipelajari');
-    })->name('informasi.apa-yang-dipelajari');
+    Route::get('/silabus', function () {
+        return view('pages.informasi.silabus');
+    })->name('informasi.silabus');
 
     Route::get('/fasilitas', function () {
         return view('pages.informasi.fasilitas');

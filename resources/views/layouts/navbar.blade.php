@@ -25,7 +25,7 @@
                     <div class="dropdown-menu m-0">
                         <a href="{{ route('informasi.pendaftaran') }}" class="dropdown-item">Pendaftaran</a>
                         <a href="{{ route('informasi.prospek-karir') }}" class="dropdown-item">Prospek Karir</a>
-                        <a href="{{ route('informasi.apa-yang-dipelajari') }}" class="dropdown-item">Apa yang Dipelajari</a>
+                        <a href="{{ route('informasi.silabus') }}" class="dropdown-item">Apa yang Dipelajari</a>
                         <a href="{{ route('informasi.fasilitas') }}" class="dropdown-item">Fasilitas</a>
                         <a href="{{ route('informasi.sertifikasi') }}" class="dropdown-item">Sertifikasi</a>
                         <a href="{{ route('informasi.perbedaan-magang-tokutei-ginou') }}" class="dropdown-item">Perbedaan Magang & Tokutei Ginou</a>

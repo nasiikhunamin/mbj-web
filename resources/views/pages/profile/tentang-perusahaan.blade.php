@@ -20,22 +20,24 @@
         <div class="row h_blog_item">
           <div class="col-lg-6">
             <div class="h_blog_img">
-              <img class="img-fluid" src="{{ asset('asset/img/about.png') }}" alt="">
+              <img class="img-fluid" src="{{ asset('asset/img/company.png') }}" alt="">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="h_blog_text">
               <div class="h_blog_text_inner left right">
-                <h4>Welcome to our Institute</h4>
+                <h4>Selamat Datang di LPK MBJ Indonesia</h4>
                 <p>
-                  Subdue whales void god which living don't midst lesser
-                  yielding over lights whose. Cattle greater brought sixth fly
-                  den dry good tree isn't seed stars were.
+                  LPK Matahari Bulan Jepang Indonesia merupakan Lembaga pendidikan Bahasa Jepang dan pelatihan kerja untuk mempersiapkan tenaga kerja yang handal khususnya ke Jepang.
                 </p>
                 <p>
-                  Subdue whales void god which living don't midst lesser yieldi
-                  over lights whose. Cattle greater brought sixth fly den dry
-                  good tree isn't seed stars were the boring.
+                  LPK Matahari Bulan Jepang Indonesia didirikan sejak  20 Mei 2023 dan telah mendapatkan izin usaha dari kementerian ketenagakerjaan RI di tahun 2023
+                </p>
+                <p>
+                  Dengan semangat untuk mengurangi angka pengangguran di Indonesia dan demi membantu kebutuhan Negara Jepang dalam memenuhi jumlah tenaga kerjanya, kami tidak ingin melewatkan kesempatan untuk  mewadahi supply dan demand yang dibutuhkan oleh kedua negara tersebut
+                </p>
+                <p>
+                  Pendidikan dan pelatihan utama yang kami berikan adalah bahasa dan budaya. Karena bagi kami bekerja atau sekolah ke Jepang bukanlah untuk pergi berwisata semata, melainkan untuk mengejar tujuan baru yang harus dicapai. Kami percaya jika pembentukan karakter dapat dibangun secara terus menerus, maka kami mampu mengirimkan siswa yang memiliki kemampuan, keterampilan, kemandirian dan kedisiplinan yang tinggi. Dan setelah mereka kembali ke Indonesia, mereka  akan menjadi generasi baru yang dapat membangun Indonesia menjadi lebih baik lagi
                 </p>
               </div>
             </div>
@@ -62,10 +64,7 @@
             <div class="desc">
               <h4 class="mt-3 mb-2">Visi</h4>
               <p>
-                Dimulai dengan tekad untuk membawa dampak perubahan kualitas yang besar kepada generasi muda Indonesia dan kepercayaan bahwa pendidikan merupakan satu-satunya jalan terbaik untuk mencapainya maka didirikanlah Purwadhika pada tahun 1987.
-              </p>
-              <p>
-                Oleh karenanya Purwadhika bukan hanya sekedar sebagai sekolah melainkan sebagai institusi pembawa perubahan kehidupan yang.
+                Menjadikan LPK Matahari Bulan Jepang Indonesia sebagai lembaga pendidikan yang professional, dan berkualitas yang dapat menghasilkan sumber daya manusia yang mampu berkompetisi di era global yang memaknai tantangan peluang sesuai dengan perkembangan ilmu pengetahuan dan teknologi untuk memenuhi kebutuhan masyarakat melalui pengembangan pembelajaran bahasa asing.
               </p>
             </div>
           </div>
@@ -76,12 +75,20 @@
             <div class="icon"><span class="flaticon-book"></span></div>
             <div class="desc">
               <h4 class="mt-3 mb-2">Misi</h4>
-              <p>
-                Merancang program yang bukan hanya untuk meningkatkan kemampuan atau keahlian para siswa tetapi untuk mempersiapkan mereka agar dapat berkontribusi sebagai profesional handal di dunia industri masa kini dan masa depan.
-              </p>
-              <p>
-                Menyediakan tenaga pengajar yang berprestasi di bidang akademis dan berpengalaman secara profesional di industri masa kini.
-              </p>
+              <ul>
+                <li>
+                  <p>Menyelenggarakan program pendidikan dan pelatihan bahasa jepang secara profesional.</p>
+                </li>
+                <li>
+                  <p>Mengadakan kegiatan pengabdian kepada masyarakat secara edukatif, konsisten, dan terprogram dengan mengacu kepada pengembangan bahasa asing.</p>
+                </li>
+                <li>
+                  <p>Mendidik generasi muda agar memiliki semangat kerja yang tinggi, disiplin dan mandiri.</p>
+                </li>
+                <li>
+                  <p>Meningkatkan hubungan kerja sama bidang tenaga kerja antara indonesia dengan jepang.</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

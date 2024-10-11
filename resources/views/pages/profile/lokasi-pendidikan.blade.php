@@ -45,40 +45,40 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.5s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-3.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('asset/img/class1.jpg') }}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-4">
-                        <h5>Kelas Kami</h5>
+                        <h5>Ruang Kelas 1</h5>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-4.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('asset/img/class2.jpg') }}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-4">
-                        <h5>Fasilitas Kelas</h5>
+                        <h5>Ruang Kelas 2</h5>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.5s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-3.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('asset/img/facility1.jpg') }}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-4">
-                        <h5>Fasilitas Kelas</h5>
+                        <h5>Asrama Putra</h5>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-4.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('asset/img/facility2.jpg') }}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-4">
-                        <h5>Fasilitas Kelas</h5>
+                        <h5>Asrama Putri</h5>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
                     <h4 class="text-secondary mb-4">Info Perusahaan</h4>
                     <a href=""><i class="fa fa-map-marker-alt me-2"></i> Jl. Taman Buah Boulevard No.003 Puribeta, Larangan, Tangerang</a>
                     <a href=""><i class="fas fa-envelope me-2"></i> info@mjbindonesia.com</a>
-                    <a href=""><i class="fas fa-phone me-2"></i> +62812 1234 1234</a>
+                    <a href=""><i class="fas fa-phone me-2"></i> +62 852‑8397‑2464</a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
@@ -42,7 +42,7 @@
                 <div class="footer-item">
                     <h4 class="text-secondary mb-4">Tetap Terhubung</h4>
                     <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="https://api.whatsapp.com/send?phone=622180675787&amp;text=Halo, saya mau informasi lebih lanjut tentang Hacktiv8. || Hello, I want to know more about Hacktiv8." target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill">
+                    <a href="https://api.whatsapp.com/send?phone=6285283972464&amp;text=Halo, saya mau informasi lebih lanjut tentang MBJ Indonesia. || Hello, I want to know more about MBJ Indonesia." target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill">
                         <i class="fab fa-whatsapp"></i>
 
                         Chat kami di whatsapp

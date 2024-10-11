@@ -14,132 +14,49 @@
 </div>
 <!-- Header End -->
 
-<!-- About Start -->
-<div class="container-fluid overflow-hidden py-5">
+<div class="container-fluid overflow-hidden py-5 d-flex justify-content-center align-items-center">
     <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-6 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.1s">
+        <div class="row g-4 justify-content-center">
+            <!-- Director -->
+            <div class="col-lg-4 col-md-4 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.1s">
                 <div class="team-item position-relative rounded overflow-hidden">
-                    <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-1.jpg') }}" alt="">
+                    <div class="overflow-hidden d-flex justify-content-center align-items-center">
+                        <img class="img-fluid" src="{{ asset('asset/img/structure1.jpeg') }}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.3s">
-                <div class="team-item position-relative rounded overflow-hidden">
-                    <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-2.jpg') }}" alt="">
-                    </div>
-                    <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
+                        <h5>Freedy Iswanto</h5>
+                        <p class="text-primary">Direktur</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row g-4 py-5">
+        <div class="row g-4 py-5 justify-content-center">
+            <!-- Advisors -->
             <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.5s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-3.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('asset/img/structure2.jpeg') }}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
+                        <h5>Dani Lauren</h5>
+                        <p class="text-primary">Penasihat LPK</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-4.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('asset/img/structure3.jpeg') }}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.5s">
-                <div class="team-item position-relative rounded overflow-hidden">
-                    <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-3.jpg') }}" alt="">
-                    </div>
-                    <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.7s">
-                <div class="team-item position-relative rounded overflow-hidden">
-                    <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-4.jpg') }}" alt="">
-                    </div>
-                    <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row g-4 py-5">
-            <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.5s">
-                <div class="team-item position-relative rounded overflow-hidden">
-                    <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-3.jpg') }}" alt="">
-                    </div>
-                    <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.7s">
-                <div class="team-item position-relative rounded overflow-hidden">
-                    <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-4.jpg') }}" alt="">
-                    </div>
-                    <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.5s">
-                <div class="team-item position-relative rounded overflow-hidden">
-                    <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-3.jpg') }}" alt="">
-                    </div>
-                    <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.7s">
-                <div class="team-item position-relative rounded overflow-hidden">
-                    <div class="overflow-hidden d-flex justify-content-center">
-                        <img class="img-fluid" src="{{ asset('asset/img/team-4.jpg') }}" alt="">
-                    </div>
-                    <div class="team-text bg-light text-center p-4">
-                        <h5>Full Name</h5>
-                        <p class="text-primary">Designation</p>
+                        <h5>Jumroh Sri Ratnasari</h5>
+                        <p class="text-primary">Penasihat LPJ</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-    
-
-<!-- About End -->
 
 @endsection
 
