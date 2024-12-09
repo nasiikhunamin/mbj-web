@@ -16,33 +16,37 @@
 
 <!-- About Start -->
 <div class="container-fluid overflow-hidden py-5">
-    <div class="container">
-        <div class="row h_blog_item">
-          <div class="col-lg-6">
-            <div class="h_blog_img">
-              <img class="img-fluid" src="{{ asset('asset/img/about.png') }}" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="h_blog_text">
-              <div class="h_blog_text_inner left right">
-                <h4>Welcome to our Institute</h4>
-                <p>
-                  Subdue whales void god which living don't midst lesser
-                  yielding over lights whose. Cattle greater brought sixth fly
-                  den dry good tree isn't seed stars were.
-                </p>
-                <p>
-                  Subdue whales void god which living don't midst lesser yieldi
-                  over lights whose. Cattle greater brought sixth fly den dry
-                  good tree isn't seed stars were the boring.
-                </p>
-              </div>
-            </div>
-          </div>
+  <div class="container legal-gallery">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="display-4">Izin SO MBJ Indonesia</h1>
+            <p class="lead text-muted">Klik pada gambar untuk memperbesar</p>
         </div>
     </div>
+    <div class="row">
+      @php
+          $documents = [
+              asset('asset/img/izin-so-1.jpeg'),
+              asset('asset/img/izin-so-2.jpeg'),
+              asset('asset/img/izin-so-3.jpeg')
+          ];
+      @endphp
+
+        @foreach($documents as $index => $document)
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+                <a href="{{ $document }}" data-lightbox="legal-docs" data-title="Legal Document {{ $index + 1 }}">
+                    <img src="{{ $document }}" alt="Legal Document {{ $index + 1 }}" class="img-fluid">
+                </a>
+            </div>
+        </div>
+        @endforeach
+    </div>
+  </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
     
 
 <!-- About End -->
