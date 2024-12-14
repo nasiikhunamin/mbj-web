@@ -65,27 +65,27 @@
                         [
                             'title' => 'Agriculture Job',
                             'image' => asset('asset/img/agriculture.jpeg'),
-                            'description' => 'Develop innovative solutions and work on cutting-edge technologies.',
+                            'description' => 'Bertani, berkebun, dan pekerjaan lain yang terkait dengan produksi hasil tani',
                         ],
                         [
                             'title' => 'Caregiver Job',
                             'image' => asset('asset/img/caregiver.jpeg'),
-                            'description' => 'Create compelling strategies to drive brand growth and engagement.',
+                            'description' => 'Merawat dan membantu aktivitas harian para lansia di fasilitas kesehatan atau rumah',
                         ],
                         [
                             'title' => 'Cleaning Service Job',
                             'image' => asset('asset/img/cleaning-service.jpeg'),
-                            'description' => 'Lead product vision and drive strategic development.',
+                            'description' => 'Membersihkan dan merawat gedung atau fasilitas lainnya.',
                         ],
                         [
                             'title' => 'Construction Job',
                             'image' => asset('asset/img/construction.jpeg'),
-                            'description' => 'Provide exceptional service and build lasting customer relationships.',
+                            'description' => 'Proyek pembangunan dan renovasi infrastruktur, seperti gedung dan jalan',
                         ],
                         [
                             'title' => 'Industry Job',
                             'image' => asset('asset/img/industry.jpeg'),
-                            'description' => 'Provide exceptional service and build lasting customer relationships.',
+                            'description' => 'Memproduksi, merakit, atau memelihara peralatan mesin',
                         ],
                         [
                             'title' => 'Manufacture Job',
@@ -98,9 +98,9 @@
                             'description' => 'Provide exceptional service and build lasting customer relationships.',
                         ],
                         [
-                            'title' => 'Restaurant Job',
+                            'title' => 'Food Service',
                             'image' => asset('asset/img/restaurant.jpeg'),
-                            'description' => 'Provide exceptional service and build lasting customer relationships.',
+                            'description' => 'Bekerja di restoran atau layanan makanan, termasuk memasak dan melayani pelanggan',
                         ],
                     ];
                 @endphp
