@@ -29,45 +29,57 @@
         </div>
         <div class="col-md-6">
             <div class="admission-step">
-                <h6 class="text-primary">Langkah 1: Persiapan Dokumen</h6>
+                <h6 class="text-primary">Registration (Pendaftaran)</h6>
                 <p class="text-muted">
-                    Kumpulkan semua dokumen penting yang diperlukan untuk pendaftaran praktek kerja magang di Jepang. 
-                    Pastikan dokumen seperti passport, ijazah, dan surat rekomendasi telah lengkap dan siap.
+                    Pada tahap ini, calon peserta magang akan melakukan pendaftaran di LPK Matahari Bulan Jepang Indonesia. Pendaftaran ini mencakup pengisian data pribadi dan informasi yang dibutuhkan untuk memulai proses seleksi dan persiapan keberangkatan.
                 </p>
             </div>
             <div class="admission-step">
-                <h6 class="text-primary">Langkah 1: Persiapan Dokumen</h6>
+                <h6 class="text-primary">Interview dan Psikotes Pertama dengan LPK Matahari Bulan Jepang Indonesia</h6>
                 <p class="text-muted">
-                    Kumpulkan semua dokumen penting yang diperlukan untuk pendaftaran praktek kerja magang di Jepang. 
-                    Pastikan dokumen seperti passport, ijazah, dan surat rekomendasi telah lengkap dan siap.
+                    Setelah pendaftaran, calon peserta akan menjalani proses wawancara awal dan psikotes untuk menilai kesiapan mental dan kecocokan dengan program magang. Proses ini bertujuan untuk memastikan bahwa peserta memiliki kemampuan yang diperlukan untuk bekerja di Jepang
                 </p>
             </div>
             <div class="admission-step">
-                <h6 class="text-primary">Langkah 1: Persiapan Dokumen</h6>
+                <h6 class="text-primary">Medical Check Up Pertama</h6>
                 <p class="text-muted">
-                    Kumpulkan semua dokumen penting yang diperlukan untuk pendaftaran praktek kerja magang di Jepang. 
-                    Pastikan dokumen seperti passport, ijazah, dan surat rekomendasi telah lengkap dan siap.
+                    Tahap ini melibatkan pemeriksaan kesehatan awal untuk memastikan bahwa calon peserta dalam kondisi fisik yang baik dan tidak memiliki penyakit yang dapat menghalangi keberangkatan atau kelancaran magang di Jepang
                 </p>
             </div>
             <div class="admission-step">
-                <h6 class="text-primary">Langkah 1: Persiapan Dokumen</h6>
+                <h6 class="text-primary">Belajar Bahasa Jepang, Peraturan, dan Etika di Jepang</h6>
                 <p class="text-muted">
-                    Kumpulkan semua dokumen penting yang diperlukan untuk pendaftaran praktek kerja magang di Jepang. 
-                    Pastikan dokumen seperti passport, ijazah, dan surat rekomendasi telah lengkap dan siap.
+                    Setelah lolos seleksi awal, peserta akan mengikuti pelatihan bahasa Jepang dasar serta pembelajaran mengenai peraturan dan etika yang berlaku di Jepang. Ini sangat penting untuk mempersiapkan peserta agar bisa beradaptasi dengan kehidupan dan budaya kerja di Jepang
                 </p>
             </div>
             <div class="admission-step">
-                <h6 class="text-primary">Langkah 1: Persiapan Dokumen</h6>
+                <h6 class="text-primary">Interview Rekrutmen dengan Perusahaan</h6>
                 <p class="text-muted">
-                    Kumpulkan semua dokumen penting yang diperlukan untuk pendaftaran praktek kerja magang di Jepang. 
-                    Pastikan dokumen seperti passport, ijazah, dan surat rekomendasi telah lengkap dan siap.
+                    Pada tahap ini, peserta akan menghadapi wawancara langsung dengan perusahaan yang akan mempekerjakan mereka selama magang di Jepang. Proses ini bertujuan untuk menilai kesesuaian peserta dengan kebutuhan perusahaan serta untuk menentukan penempatan kerja yang sesuai
                 </p>
             </div>
             <div class="admission-step">
-                <h6 class="text-primary">Langkah 1: Persiapan Dokumen</h6>
+                <h6 class="text-primary">Aplikasi Paspor, CoE dan Visa</h6>
                 <p class="text-muted">
-                    Kumpulkan semua dokumen penting yang diperlukan untuk pendaftaran praktek kerja magang di Jepang. 
-                    Pastikan dokumen seperti passport, ijazah, dan surat rekomendasi telah lengkap dan siap.
+                    Setelah diterima oleh perusahaan, peserta akan mengajukan aplikasi paspor, Certificate of Eligibility (CoE), dan visa magang. Proses ini penting untuk memperoleh izin resmi untuk tinggal dan bekerja di Jepang selama periode magang
+                </p>
+            </div>
+            <div class="admission-step">
+                <h6 class="text-primary">Medical Check Up Sebelum Keberangkatan</h6>
+                <p class="text-muted">
+                    Sebelum keberangkatan, peserta akan menjalani pemeriksaan kesehatan lanjutan untuk memastikan kondisi fisik yang prima. Hal ini juga untuk memenuhi persyaratan kesehatan yang ditetapkan oleh pihak imigrasi Jepang
+                </p>
+            </div>
+            <div class="admission-step">
+                <h6 class="text-primary">Orientasi Sebelum Keberangkatan & Berangkat</h6>
+                <p class="text-muted">
+                    Pada tahap ini, peserta akan mendapatkan orientasi mengenai kehidupan dan pekerjaan di Jepang. Orientasi ini juga mencakup informasi penting terkait keberangkatan, seperti penerbangan, kedatangan di Jepang, dan pengaturan tempat tinggal. Setelah orientasi, peserta akan diberangkatkan ke Jepang
+                </p>
+            </div>
+            <div class="admission-step">
+                <h6 class="text-primary">Memulai Magang Teknis di Jepang</h6>
+                <p class="text-muted">
+                    Setelah tiba di Jepang, peserta akan memulai program magang teknis sesuai dengan bidang yang telah ditentukan. Mereka akan bekerja di perusahaan yang sudah ditempatkan dan memulai pengalaman magang untuk memperdalam keterampilan teknis dan mendapatkan pengalaman kerja di Jepang
                 </p>
             </div>
         </div>
