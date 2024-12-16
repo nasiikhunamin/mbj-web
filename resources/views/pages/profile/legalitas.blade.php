@@ -19,7 +19,7 @@
   <div class="container legal-gallery">
     <div class="row">
         <div class="col-12 text-center mb-5">
-          <h1 class="display-4">Izin Legalitas MBJ Indonesia</h1>
+            <h2 class="display-7">Izin Legalitas MBJ Indonesia</h2>
             <p class="lead text-muted">Klik pada gambar untuk memperbesar</p>
         </div>
     </div>

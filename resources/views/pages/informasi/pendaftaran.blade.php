@@ -25,7 +25,7 @@
     </div>
     <div class="row align-items-center mb-4">
         <div class="col-md-6 mb-3 mb-md-0">
-            <img src="{{ asset('asset/img/registration-flow.jpeg') }}" alt="Step 1" class="img-fluid rounded shadow">
+            <img src="{{ asset('asset/img/registration-flow-1.jpeg') }}" alt="Step 1" class="img-fluid rounded shadow">
         </div>
         <div class="col-md-6">
             <div class="admission-step">
