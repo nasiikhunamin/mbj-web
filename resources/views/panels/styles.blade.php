@@ -10,7 +10,7 @@
 <link href="{{ asset('asset/css/bootstrap.min.css') }}" rel="stylesheet">
 
 <!-- BEGIN: Theme CSS-->
-<link href="{{ asset('asset/css/style.css?v=1.0') }}" rel="stylesheet">
+<link href="{{ asset('asset/css/style.css?v=1.1') }}" rel="stylesheet">
 
 {{-- Page Styles --}}
 @yield('page-style')
