@@ -58,9 +58,23 @@ Route::prefix('informasi')->group(function () {
         return view('pages.informasi.fasilitas');
     })->name('informasi.fasilitas');
 
-    Route::get('/sertifikasi', function () {
-        return view('pages.informasi.sertifikasi');
-    })->name('informasi.sertifikasi');
+    Route::prefix('sertifikasi')->group(function () {
+        Route::get('/', function () {
+            return view('pages.informasi.sertifikasi');
+        })->name('informasi.sertifikasi');
+        Route::get('/coe', function () {
+            return view('pages.informasi.sertifikasi.coe');
+        })->name('informasi.sertifikasi.coe');
+        Route::get('/jft', function () {
+            return view('pages.informasi.sertifikasi.jft');
+        })->name('informasi.sertifikasi.jft');
+        Route::get('/jlpt', function () {
+            return view('pages.informasi.sertifikasi.jlpt');
+        })->name('informasi.sertifikasi.jlpt');
+        Route::get('/ssw', function () {
+            return view('pages.informasi.sertifikasi.ssw');
+        })->name('informasi.sertifikasi.ssw');
+    });
 
     Route::get('/perbedaan-magang-tokutei-ginou', function () {
         return view('pages.informasi.perbedaan-magang-tokutei-ginou');

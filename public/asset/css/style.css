@@ -31,6 +31,42 @@
     max-width: 800px;
     margin: 0 auto;
 }
+.certification-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.certification-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+.certification-card img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+.certification-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+.certification-card:hover .certification-overlay {
+    height: 100%;
+}
+.certification-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {

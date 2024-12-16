@@ -41,7 +41,8 @@
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item">
                     <h4 class="text-secondary mb-4">Tetap Terhubung</h4>
-                    <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text-white mb-3">Hi!👋 <br>
+                        Ingin tahu lebih lanjut? Kamu bisa menghubungi kami via WhatsApp</p>
                     <a href="https://api.whatsapp.com/send?phone=6285283972464&amp;text=Halo, saya mau informasi lebih lanjut tentang MBJ Indonesia. || Hello, I want to know more about MBJ Indonesia." target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill">
                         <i class="fab fa-whatsapp"></i>
 
