@@ -86,7 +86,7 @@
     </div>
     <div class="row">
         <div class="col-12 text-center mt-4">
-            <a href="#" class="btn btn-primary btn-lg pulse-animation">
+            <a href="https://api.whatsapp.com/send?phone=6285283972464&amp;text=Halo, saya mau informasi lebih lanjut tentang MBJ Indonesia. || Hello, I want to know more about MBJ Indonesia." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg pulse-animation">
                 Daftar Sekarang!
                 <i class="bi bi-arrow-right-circle ms-2"></i>
             </a>
