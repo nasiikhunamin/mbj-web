@@ -29,32 +29,32 @@
             [
                 'id' => 'coe',
                 'title' => 'Certificate of Eligibility (CoE)',
-                'image' => 'https://via.placeholder.com/600x400?text=Certificate+of+Eligibility',
+                'image' => asset('asset/img/cert-coe.jpeg'),
                 'route' => 'informasi.sertifikasi.coe'
             ],
             [
                 'id' => 'jft',
                 'title' => 'Japan Foundation Test for Basic Japanese',
-                'image' => 'https://via.placeholder.com/600x400?text=JFT+Basic',
+                'image' => asset('asset/img/cert-jft.jpeg'),
                 'route' => 'informasi.sertifikasi.jft'
             ],
             [
                 'id' => 'jlpt',
                 'title' => 'Japanese Language Proficiency Test',
-                'image' => 'https://via.placeholder.com/600x400?text=JLPT',
+                'image' => asset('asset/img/cert-jlpt.jpeg'),
                 'route' => 'informasi.sertifikasi.jlpt'
             ],
             [
                 'id' => 'ssw',
                 'title' => 'SSW',
-                'image' => 'https://via.placeholder.com/600x400?text=SSW',
+                'image' => asset('asset/img/cert-ssw.jpeg'),
                 'route' => 'informasi.sertifikasi.ssw'
             ]
         ];
         @endphp
 
         @foreach($certifications as $certification)
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div 
                 class="card certification-card position-relative" 
                 onclick="window.location.href='{{ route($certification['route']) }}'"
