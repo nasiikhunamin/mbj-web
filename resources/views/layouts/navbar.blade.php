@@ -38,7 +38,6 @@
                         <a href="{{ route('komunitas.testimoni-alumni') }}" class="dropdown-item">Testimoni Alumni</a>
                         <a href="{{ route('komunitas.galeri') }}" class="dropdown-item">Galeri</a>
                         <a href="{{ route('komunitas.faq') }}" class="dropdown-item">FAQ</a>
-                        <a href="{{ route('komunitas.proses-pindah-kerja') }}" class="dropdown-item">Proses Pindah Kerja</a>
                     </div>
                 </div>
             </div>

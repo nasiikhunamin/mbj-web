@@ -51,12 +51,11 @@ Route::prefix('informasi')->group(function () {
     })->name('informasi.prospek-karir');
 
     Route::get('/silabus', function () {
-        return view('maintenance');
+        return view('pages.informasi.silabus');
     })->name('informasi.silabus');
 
     Route::get('/fasilitas', function () {
-        return view('maintenance');
-        // return view('pages.informasi.fasilitas');
+        return view('pages.informasi.fasilitas');
     })->name('informasi.fasilitas');
 
     Route::prefix('sertifikasi')->group(function () {
@@ -78,36 +77,27 @@ Route::prefix('informasi')->group(function () {
     });
 
     Route::get('/perbedaan-magang-tokutei-ginou', function () {
-        return view('maintenance');
-        // return view('pages.informasi.perbedaan-magang-tokutei-ginou');
+        return view('pages.informasi.perbedaan-magang-tokutei-ginou');
     })->name('informasi.perbedaan-magang-tokutei-ginou');
 
     Route::get('/biaya-hidup-di-jepang', function () {
-        return view('maintenance');
-        // return view('pages.informasi.biaya-hidup-di-jepang');
+        return view('pages.informasi.biaya-hidup-di-jepang');
     })->name('informasi.biaya-hidup-di-jepang');
 });
 
 // Komunitas Routes
 Route::prefix('komunitas')->group(function () {
     Route::get('/testimoni-alumni', function () {
-        return view('maintenance');
-        // return view('pages.komunitas.testimoni-alumni');
+        return view('pages.komunitas.testimoni');
     })->name('komunitas.testimoni-alumni');
 
     Route::get('/galeri', function () {
-        return view('maintenance');
-        // return view('pages.komunitas.galeri');
+        return view('pages.komunitas.galeri');
     })->name('komunitas.galeri');
 
     Route::get('/faq', function () {
         return view('pages.komunitas.faq');
     })->name('komunitas.faq');
-
-    Route::get('/proses-pindah-kerja', function () {
-        return view('maintenance');
-        // return view('pages.komunitas.proses-pindah-kerja');
-    })->name('komunitas.proses-pindah-kerja');
 });
 
 // Daftar Sekarang Route

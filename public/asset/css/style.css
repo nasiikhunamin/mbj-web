@@ -13,6 +13,28 @@
     }
 }
 
+
+    .facility-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .facility-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Ensure consistent image aspect ratio */
+    .aspect-\[4\/3\] {
+        aspect-ratio: 4/3;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+        .sm\:w-1\/3 {
+            width: 100%;
+        }
+    }
+
+
 .pulse-animation {
     position: relative;
     animation: pulse 2s infinite;
