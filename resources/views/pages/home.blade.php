@@ -17,7 +17,7 @@
                             <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
                                 Wujudkan impian belajar tanpa pusing biaya. Belajar di Bootcamp MJB Indonesia bisa bayar setelah lulus hingga dapat kerja!* 
                             </p>
-                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">Daftar Sekarang!</a>
+                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="{{ route('daftar') }}">Daftar Sekarang!</a>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                             <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
                                 MJB Indonesia telah menyalurkan lebih dari 30.000 talenta berkualitas untuk bekerja di Jepang.
                             </p>
-                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">Daftar Sekarang!</a>
+                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="{{ route('daftar') }}">Daftar Sekarang!</a>
                         </div>
                     </div>
                 </div>
