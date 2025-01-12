@@ -17,7 +17,7 @@
 <div class="container-fluid py-5">
     <div class="container">
         <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-            <h2 class="display-7 mb-4">Dokumentasi Kegiatan LPK Matahari Bulan</h2>
+            <h2 class="display-7 mb-4">Dokumentasi Kegiatan LPK Matahari Bulan Jepang Indonesia</h2>
         </div>
 
         <div class="row g-4">
