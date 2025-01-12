@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <title>MBJ Indonesia - Ayo Kerja di Jepang</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <meta content="LPK Tangerang, LPK terpercaya, LPK jepang, LPK Matahari Bulan Jepang Indonesia, LPK MBJ Indonesia, LPK Jepang terpercaya" name="keywords">
+        <meta content="LPK Matahari Bulan Jepang Indonesia (MBJ) adalah lembaga pelatihan kerja terpercaya di Tangerang yang memfokuskan pada pelatihan dan penempatan kerja ke Jepang. Dengan pengalaman dan dedikasi tinggi, kami siap membantu mewujudkan impian Anda bekerja di Jepang." name="description">
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
