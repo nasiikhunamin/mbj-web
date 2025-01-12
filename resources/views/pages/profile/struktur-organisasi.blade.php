@@ -50,7 +50,7 @@
                     </div>
                     <div class="team-text bg-light text-center p-4">
                         <h5>Jumroh Sri Ratnasari</h5>
-                        <p class="text-primary">Penasihat LPJ</p>
+                        <p class="text-primary">Penasihat LPK</p>
                     </div>
                 </div>
             </div>

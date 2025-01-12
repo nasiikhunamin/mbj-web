@@ -9,25 +9,25 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="{{ asset('asset/img/carousel-1.jpg') }}" class="img-fluid" alt="Image">
+                    <img src="{{ asset('asset/img/home-1.jpeg') }}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="text-center p-4" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Kendala Biaya?</h4>
                             <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Ikuti Kelas, Bayar Setelah Kerja di Jepang!</h1>
                             <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
-                                Wujudkan impian belajar tanpa pusing biaya. Belajar di Bootcamp MJB Indonesia bisa bayar setelah lulus hingga dapat kerja!* 
+                                Wujudkan impian belajar tanpa pusing biaya. Belajar di Bootcamp MBJ Indonesia bisa bayar setelah lulus hingga dapat kerja!* 
                             </p>
                             <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="{{ route('daftar') }}">Daftar Sekarang!</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('asset/img/carousel-1.jpg') }}" class="img-fluid" alt="Image">
+                    <img src="{{ asset('asset/img/home-2.jpeg') }}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="text-center p-4" style="max-width: 900px;">
                             <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Raih karir dan kerja impian di jepang!</h1>
                             <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
-                                MJB Indonesia telah menyalurkan lebih dari 30.000 talenta berkualitas untuk bekerja di Jepang.
+                                MBJ Indonesia telah menyalurkan lebih dari 30.000 talenta berkualitas untuk bekerja di Jepang.
                             </p>
                             <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="{{ route('daftar') }}">Daftar Sekarang!</a>
                         </div>
