@@ -16,11 +16,11 @@
                     <h4 class="text-secondary mb-4">Waktu Buka</h4>
                     <div class="mb-3">
                         <h6 class="text-muted mb-0">Senin - Jumat:</h6>
-                        <p class="text-white mb-0">09.00 - 17.00</p>
+                        <p class="text-white mb-0">08.00 - 16.00</p>
                     </div>
                     <div class="mb-3">
                         <h6 class="text-muted mb-0">Sabtu:</h6>
-                        <p class="text-white mb-0">10.00 - 17.00</p>
+                        <p class="text-white mb-0">08.00 - 14.00</p>
                     </div>
                     <div class="mb-3">
                         <h6 class="text-muted mb-0">Minggu / Hari Libur:</h6>
