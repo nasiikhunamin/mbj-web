@@ -25,10 +25,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="card gallery-item h-100">
                     <img src="{{asset('asset/img/galery-1.jpeg')}}" class="card-img-top" alt="Kegiatan 1">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <h5 class="card-title">Pelatihan Bahasa Jepang</h5>
                         <p class="card-text">Kegiatan belajar mengajar bahasa Jepang dengan metode yang interaktif dan menyenangkan.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -36,10 +36,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="card gallery-item h-100">
                     <img src="{{asset('asset/img/galery-2.jpeg')}}" class="card-img-top" alt="Kegiatan 2">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <h5 class="card-title">Pelatihan Bahasa Jepang</h5>
                         <p class="card-text">Kegiatan belajar mengajar bahasa Jepang dengan metode yang interaktif dan menyenangkan.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -47,10 +47,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="card gallery-item h-100">
                     <img src="{{asset('asset/img/galery-3.jpeg')}}" class="card-img-top" alt="Kegiatan 3">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <h5 class="card-title">Pelatihan Bahasa Jepang</h5>
                         <p class="card-text">Kegiatan belajar mengajar bahasa Jepang dengan metode yang interaktif dan menyenangkan.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -58,10 +58,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="card gallery-item h-100">
                     <img src="{{asset('asset/img/galery-4.jpeg')}}" class="card-img-top" alt="Kegiatan 4">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <h5 class="card-title">Pelatihan Bahasa Jepang</h5>
                         <p class="card-text">Kegiatan belajar mengajar bahasa Jepang dengan metode yang interaktif dan menyenangkan.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -69,10 +69,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="card gallery-item h-100">
                     <img src="{{asset('asset/img/galery-5.jpeg')}}" class="card-img-top" alt="Kegiatan 5">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <h5 class="card-title">Pelatihan Bahasa Jepang</h5>
                         <p class="card-text">Kegiatan belajar mengajar bahasa Jepang dengan metode yang interaktif dan menyenangkan.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -80,10 +80,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="card gallery-item h-100">
                     <img src="{{asset('asset/img/galery-6.jpeg')}}" class="card-img-top" alt="Kegiatan 6">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <h5 class="card-title">Pelatihan Bahasa Jepang</h5>
                         <p class="card-text">Kegiatan belajar mengajar bahasa Jepang dengan metode yang interaktif dan menyenangkan.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -91,10 +91,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="card gallery-item h-100">
                     <img src="{{asset('asset/img/galery-7.jpeg')}}" class="card-img-top" alt="Kegiatan 7">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <h5 class="card-title">Pelatihan Bahasa Jepang</h5>
                         <p class="card-text">Kegiatan belajar mengajar bahasa Jepang dengan metode yang interaktif dan menyenangkan.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -102,10 +102,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="card gallery-item h-100">
                     <img src="{{asset('asset/img/galery-8.jpeg')}}" class="card-img-top" alt="Kegiatan 8">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <h5 class="card-title">Pelatihan Bahasa Jepang</h5>
                         <p class="card-text">Kegiatan belajar mengajar bahasa Jepang dengan metode yang interaktif dan menyenangkan.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -113,10 +113,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="card gallery-item h-100">
                     <img src="{{asset('asset/img/galery-9.jpeg')}}" class="card-img-top" alt="Kegiatan 9">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
                         <h5 class="card-title">Pelatihan Bahasa Jepang</h5>
                         <p class="card-text">Kegiatan belajar mengajar bahasa Jepang dengan metode yang interaktif dan menyenangkan.</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
