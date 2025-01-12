@@ -99,30 +99,38 @@
 <!-- Training Start -->
 <div class="container-fluid training overflow-hidden bg-light py-5">
     <div class="container py-5">
-        <div class="row h_blog_item">
-            <div class="col-lg-6">
-              <div class="h_blog_text">
-                <div class="h_blog_text_inner left right">
-                  <h4>Kunjungi Kami</h4>
-                  {{-- <h6>Head Office</h6> --}}
-                  <h6>Branch Office</h6>
+      <div class="row h_blog_item">
+        <div class="col-lg-6">
+          <div class="h_blog_text">
+            <div class="h_blog_text_inner left right">
+                <h4>Kunjungi Head Office Kami</h4>
+                <p>
+                    Jl. Taman Buah Boulevard No.003 Puribeta, RT.004/RW.2, Larangan Utara, Kec. Larangan, Kota Tangerang, Banten 15154
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="h_blog_maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d991.556979249192!2d106.72222!3d-6.233658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb0078016aaf%3A0x7d15aaef50c8931a!2sLPK%20Matahari%20Bulan%20Jepang%20Indonesia!5e0!3m2!1sid!2sid!4v1736708807011!5m2!1sid!2sid" width="650" height="405" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="h_blog_text">
+              <div class="h_blog_text_inner left right">
+                  <h4>Kunjungi Branch Office Kami</h4>   
                   <p>
                     Jl. Kh. Moh. Kup No.24, RT.005/RW.001, Pinang, Kec. Pinang, Kota Tangerang, Banten 15145
-                    {{-- Jl. Taman Buah Boulevard No.003 Puribeta, RT.004/RW.2, Larangan Utara, Kec. Larangan, Kota Tangerang, Banten 15154 --}}
                   </p>
-                </div>
               </div>
             </div>
-            <div class="col-lg-6">
-                <div class="h_blog_maps">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2121.1081457436617!2d106.68759010820143!3d-6.217300227862818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f90034ecac1f%3A0x7588ad81209d4f03!2sLPK%20MATAHARI%20BULAN%20JEPANG%20INDONESIA!5e0!3m2!1sid!2sid!4v1736708222323!5m2!1sid!2sid" width="650" height="433" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.7784891288964!2d106.72222011026852!3d-6.233658524462916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fa09d1d75bcf%3A0xa0c16a498c397606!2sPuri%20Beta%202%20Taman%20Buah!5e0!3m2!1sid!2sid!4v1723369381374!5m2!1sid!2sid" 
-                        width="100%" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe> --}}
-                </div>
-            </div>
-            
           </div>
+          <div class="col-lg-6">
+              <div class="h_blog_maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2121.1081457436617!2d106.68759010820143!3d-6.217300227862818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f90034ecac1f%3A0x7588ad81209d4f03!2sLPK%20MATAHARI%20BULAN%20JEPANG%20INDONESIA!5e0!3m2!1sid!2sid!4v1736708703829!5m2!1sid!2sid" width="650" height="405" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+    </div>
         
     </div>
 </div>

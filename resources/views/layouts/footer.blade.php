@@ -44,12 +44,14 @@
                     <h4 class="text-secondary mb-4">Tetap Terhubung</h4>
                     <p class="text-white mb-3">Hi!👋 <br>
                         Ingin tahu lebih lanjut? Kamu bisa menghubungi kami via WhatsApp</p>
-                    <a href="https://api.whatsapp.com/send?phone=6285283972464&amp;text=Halo, saya mau informasi lebih lanjut tentang MBJ Indonesia. || Hello, I want to know more about MBJ Indonesia." target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill">
-                        <i class="fab fa-whatsapp"></i>
-
+                    <a href="https://api.whatsapp.com/send?phone=6285283972464&text=Halo, saya mau informasi lebih lanjut tentang MBJ Indonesia. || Hello, I want to know more about xxxxxxx." 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn rounded-pill" 
+                       style="background-color: #25D366; color: white; display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; border: none; transition: all 0.3s ease;">
+                        <i class="fab fa-whatsapp" style="font-size: 20px;"></i>
                         Chat kami di whatsapp
                     </a>
-                    {{-- <button type="button" class="btn btn-primary rounded-pill">SignUp</button> --}}
                 </div>
             </div>
         </div>
