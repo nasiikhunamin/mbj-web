@@ -13,6 +13,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
         <link rel="icon" type="image/svg+xml" href="{{ asset('mbj-logo.ico') }}" />
+        <link rel="preload" fetchpriority="high" as="image" href="{{ asset('asset/img/home-1.jpeg') }}" type="image/jpeg">
+
 
         {{-- Include Styles --}}
         @include('panels/styles')
