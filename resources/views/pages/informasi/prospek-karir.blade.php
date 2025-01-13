@@ -107,13 +107,17 @@
 
                 @foreach($jobOpportunities as $job)
                 <div class="col-md-3 col-sm-6">
-                    <div class="job-card">
-                        <img src="{{ $job['image'] }}" alt="{{ $job['title'] }}" class="job-card-img">
-                        <div class="job-card-body">
-                            <h3 class="job-card-title">{{ $job['title'] }}</h3>
-                            <p class="job-card-description">{{ $job['description'] }}</p>
+                    <a href="https://api.whatsapp.com/send?phone=6285283972464&text={{ urlencode('Halo, saya mau informasi lebih lanjut tentang pekerjaan ' . $job['title']) }}" 
+                    target="_blank" 
+                    class="text-decoration-none">
+                        <div class="job-card">
+                            <img src="{{ $job['image'] }}" alt="{{ $job['title'] }}" class="job-card-img">
+                            <div class="job-card-body">
+                                <h3 class="job-card-title">{{ $job['title'] }}</h3>
+                                <p class="job-card-description">{{ $job['description'] }}</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 @endforeach
             </div>
