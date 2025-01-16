@@ -55,6 +55,31 @@
                 </div>
             </div>
         </div>
+        <div class="row g-4 py-5 justify-content-center">
+            <!-- Advisors -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.5s">
+                <div class="team-item position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden d-flex justify-content-center">
+                        <img class="img-fluid" src="{{ asset('asset/img/structure4.jpeg') }}" alt="">
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>Margareth Endaris Putri</h5>
+                        <p class="text-primary">Sensei</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.7s">
+                <div class="team-item position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden d-flex justify-content-center">
+                        <img class="img-fluid" src="{{ asset('asset/img/structure5.jpeg') }}" alt="">
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>Irna Agustin</h5>
+                        <p class="text-primary">Staff Administrasi/HRD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
