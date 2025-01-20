@@ -39,7 +39,7 @@
                     </div>
                     <div class="team-text bg-light text-center p-4">
                         <h5>Dani Lauren</h5>
-                        <p class="text-primary">Penasihat LPK</p>
+                        <p class="text-primary">Manager Operasional/Pemasaran</p>
                     </div>
                 </div>
             </div>
