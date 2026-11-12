@@ -4,6 +4,7 @@
 /public/hot
 /public/storage
 /storage/*.key
+/storage/app/galeri-original
 /vendor
 .env
 .env.backup
