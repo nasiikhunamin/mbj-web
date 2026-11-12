@@ -90,14 +90,15 @@ jobs:
             --exclude='storage/' \
             ./ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
 
-      - name: Clear cache, migrate, dan cache ulang
+      - name: Clear cache dan cache ulang
         run: |
           ssh -i ~/.ssh/deploy_key -p "$SSH_PORT" "$SSH_USER@$SSH_HOST" "
             set -e
             cd '$DEPLOY_PATH'
             chmod -R ug+rwX storage bootstrap/cache
             $PHP_BIN artisan optimize:clear
-            $PHP_BIN artisan migrate --force
+            # Website ini statis (tanpa database), jadi migrate tidak dijalankan.
+            # Tambahkan kembali '$PHP_BIN artisan migrate --force' jika nanti butuh DB.
             $PHP_BIN artisan config:cache
             $PHP_BIN artisan view:cache
           "
