@@ -7,7 +7,7 @@
                     <h4 class="text-secondary mb-4">Info Perusahaan</h4>
                     {{-- <a href=""><i class="fa fa-map-marker-alt me-2"></i> Jl. Taman Buah Boulevard No.003 Puribeta, Larangan, Tangerang</a> --}}
                     <a href=""><i class="fa fa-map-marker-alt me-2"></i> Jl. Kh. Moh. Kup No.24, RT.005/RW.001, Pinang, Kec. Pinang, Kota Tangerang, Banten 15145</a>
-                    <a href=""><i class="fas fa-envelope me-2"></i> info@mbjindonesia.com</a>
+                    <a href=""><i class="fas fa-envelope me-2"></i> info@mbjindonesia.co.id</a>
                     <a href=""><i class="fas fa-phone me-2"></i> +62 852‑8397‑2464</a>
                 </div>
             </div>
