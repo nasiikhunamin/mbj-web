@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -92,7 +94,26 @@ Route::prefix('komunitas')->group(function () {
     })->name('komunitas.testimoni-alumni');
 
     Route::get('/galeri', function () {
-        return view('pages.komunitas.galeri');
+        $files = collect(glob(public_path('asset/img/galery-*')) ?: [])
+            ->filter(fn ($path) => preg_match('/^galery-(\d+)\.(jpe?g|png|webp)$/i', basename($path)))
+            ->sortBy(fn ($path) => (int) preg_replace('/\D+/', '', basename($path)))
+            ->values();
+
+        $perPage = 9;
+        $currentPage = Paginator::resolveCurrentPage();
+
+        $images = new LengthAwarePaginator(
+            $files->forPage($currentPage, $perPage)->values(),
+            $files->count(),
+            $perPage,
+            $currentPage,
+            [
+                'path' => route('komunitas.galeri'),
+                'fragment' => 'galeri',
+            ]
+        );
+
+        return view('pages.komunitas.galeri', compact('images'));
     })->name('komunitas.galeri');
 
     Route::get('/faq', function () {
