@@ -15,6 +15,7 @@
                     <div class="dropdown-menu m-0">
                         <a href="{{ route('profile.tentang-perusahaan') }}" class="dropdown-item">Tentang Perusahaan</a>
                         <a href="{{ route('profile.legalitas') }}" class="dropdown-item">Legalitas</a>
+                        <a href="{{ route('profile.akreditasi') }}" class="dropdown-item">Akreditasi</a>
                         <a href="{{ route('profile.izin-so') }}" class="dropdown-item">Izin SO</a>
                         <a href="{{ route('profile.struktur-organisasi') }}" class="dropdown-item">Struktur Organisasi</a>
                         <a href="{{ route('profile.lokasi-pendidikan') }}" class="dropdown-item">Lokasi Pendidikan</a>

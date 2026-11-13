@@ -7,7 +7,7 @@
                     <h4 class="text-secondary mb-4">Info Perusahaan</h4>
                     {{-- <a href=""><i class="fa fa-map-marker-alt me-2"></i> Jl. Taman Buah Boulevard No.003 Puribeta, Larangan, Tangerang</a> --}}
                     <a href=""><i class="fa fa-map-marker-alt me-2"></i> Jl. Kh. Moh. Kup No.24, RT.005/RW.001, Pinang, Kec. Pinang, Kota Tangerang, Banten 15145</a>
-                    <a href=""><i class="fas fa-envelope me-2"></i> info@mbjindonesia.co.id</a>
+                    <a href=""><i class="fas fa-envelope me-2"></i> mbjindo@gmail.com</a>
                     <a href=""><i class="fas fa-phone me-2"></i> +62 852‑8397‑2464</a>
                 </div>
             </div>
@@ -44,10 +44,10 @@
                     <h4 class="text-secondary mb-4">Tetap Terhubung</h4>
                     <p class="text-white mb-3">Hi!👋 <br>
                         Ingin tahu lebih lanjut? Kamu bisa menghubungi kami via WhatsApp</p>
-                    <a href="https://api.whatsapp.com/send?phone=6285283972464&text=Halo, saya mau informasi lebih lanjut tentang MBJ Indonesia." 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="btn rounded-pill" 
+                    <a href="https://api.whatsapp.com/send?phone=6285283972464&text=Halo, saya mau informasi lebih lanjut tentang MBJ Indonesia."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn rounded-pill"
                        style="background-color: #25D366; color: white; display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; border: none; transition: all 0.3s ease;">
                         <i class="fab fa-whatsapp" style="font-size: 20px;"></i>
                         Chat kami di whatsapp
