@@ -29,6 +29,10 @@ Route::prefix('profile')->group(function () {
         return view('pages.profile.legalitas');
     })->name('profile.legalitas');
 
+    Route::get('/akreditasi', function () {
+        return view('pages.profile.akreditasi');
+    })->name('profile.akreditasi');
+
     Route::get('/izin-so', function () {
         return view('pages.profile.izin-so');
     })->name('profile.izin-so');
