@@ -1,0 +1,60 @@
+experiment:
+  code: E12
+  description: Semantic Chunking (Cosine breakpoint + recursive fallback) + Hybrid
+    RRF Retrieval + Cross-Encoder Reranking (Top-5)
+  version: "2.3"
+  execution_date: '2026-11-21'
+corpus:
+  max_document_count: 15
+  sources:
+  - type: pdf
+    directory: data/raw/pdf
+  - type: docx
+    directory: data/raw/docx
+  - type: web
+    directory: data/raw/web
+chunking:
+  strategy: semantic
+  token_limit: 512
+  token_overlap: 50
+  tokenizer_model: intfloat/multilingual-e5-base
+  semantic_fallback_recursive: true
+embedding:
+  model_name: intfloat/multilingual-e5-base
+  dimension: 768
+  prefix_document: 'passage: '
+  prefix_query: 'query: '
+  batch_size: 32
+retrieval:
+  method: hybrid_rerank
+  dense_collection: chroma_semantic
+  bm25_index: bm25_semantic
+  initial_candidates: 20
+  rrf_k: 60
+  final_top_n: 5
+  bm25_stemming: true
+  bm25_language: indonesian
+reranker:
+  enabled: true
+  model_name: BAAI/bge-reranker-v2-m3
+  top_n: 5
+generation:
+  provider: tokenharbor
+  base_url: https://tokenharbor.ai/v1
+  api_key_env: TOKENHARBOR_API_KEY
+  model_name: deepseek-v4.1-flash:free
+  temperature: 0.0
+  max_output_tokens: 600
+  seed: null
+  disable_thinking: true
+storage:
+  chroma_directory: data/vectordb/chroma
+  bm25_directory: data/vectordb/bm25
+evaluation:
+  framework: ragas==0.1.21
+  evaluator_llm: "env JUDGE_MODEL (default mimo-v2.6-flash:free, family MiMo) - lihat ADR 0002"
+  kappa_annotation_unit: atomic_claim
+  statistical_package: R-ARTool
+  significance_level_alpha: 0.05
+  ground_truth_dataset: data/evaluation/ground_truth.json
+  output_results_path: data/results/E12_results.json

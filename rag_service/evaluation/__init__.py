@@ -1,0 +1,72 @@
+"""Evaluation helpers for the RAG experiment (RAGAS faithfulness, IR metrics)."""
+
+from rag_service.evaluation.faithfulness import (
+    FaithfulnessError,
+    FaithfulnessScore,
+    RagasFaithfulnessScorer,
+)
+from rag_service.evaluation.judge import (
+    DEFAULT_JUDGE_API_KEY_ENV,
+    DEFAULT_JUDGE_BASE_URL,
+    DEFAULT_JUDGE_MODEL,
+    GENERATOR_FAMILY,
+    JudgeClient,
+    JudgeConfig,
+    JudgeError,
+    JudgeResponse,
+    assert_independent_judge,
+    extract_json,
+    model_family,
+)
+from rag_service.evaluation.metrics import (
+    hit_at_k,
+    ir_metrics,
+    ndcg_at_k,
+    ranked_document_ids,
+    reciprocal_rank_at_k,
+    relevant_documents,
+)
+from rag_service.evaluation.report import (
+    DEFAULT_K,
+    EvaluationError,
+    ExperimentEvaluation,
+    FaithfulnessCache,
+    evaluate_experiment,
+    load_ground_truth,
+    load_results,
+    write_details_json,
+    write_summary_csv,
+)
+
+__all__ = [
+    "DEFAULT_JUDGE_API_KEY_ENV",
+    "DEFAULT_JUDGE_BASE_URL",
+    "DEFAULT_JUDGE_MODEL",
+    "DEFAULT_K",
+    "EvaluationError",
+    "ExperimentEvaluation",
+    "FaithfulnessCache",
+    "FaithfulnessError",
+    "FaithfulnessScore",
+    "GENERATOR_FAMILY",
+    "JudgeClient",
+    "JudgeConfig",
+    "JudgeError",
+    "JudgeResponse",
+    "RagasFaithfulnessScorer",
+    "assert_independent_judge",
+    "evaluate_experiment",
+    "extract_json",
+    "hit_at_k",
+    "ir_metrics",
+    "load_ground_truth",
+    "load_results",
+    "model_family",
+    "ndcg_at_k",
+    "ranked_document_ids",
+    "reciprocal_rank_at_k",
+    "rejection_accuracy",
+    "relevant_documents",
+    "write_details_json",
+    "write_summary_csv",
+]
