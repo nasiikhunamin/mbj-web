@@ -9,3 +9,6 @@
 
 <!-- Template Javascript -->
 <script src="{{ asset('asset/js/main.js') }}"></script>
+
+<!-- Chat Widget Javascript -->
+<script src="{{ asset('asset/js/chat-widget.js?v=1.0') }}"></script>

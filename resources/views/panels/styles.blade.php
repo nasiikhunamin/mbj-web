@@ -12,5 +12,8 @@
 <!-- BEGIN: Theme CSS-->
 <link href="{{ asset('asset/css/style.css?v=1.1') }}" rel="stylesheet">
 
+<!-- Chat Widget CSS-->
+<link href="{{ asset('asset/css/chat-widget.css?v=1.1') }}" rel="stylesheet">
+
 {{-- Page Styles --}}
 @yield('page-style')
