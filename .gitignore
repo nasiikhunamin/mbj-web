@@ -19,6 +19,18 @@ yarn-error.log
 /.idea
 /.vscode
 
+# Python environments and caches
+/.venv
+/.venv*/
+__pycache__/
+*.py[cod]
+.coverage
+.coverage.*
+htmlcov/
+
+# Generated RAG indices
+/data/vectordb
+
 /caddy
 frankenphp
 frankenphp-worker.php
