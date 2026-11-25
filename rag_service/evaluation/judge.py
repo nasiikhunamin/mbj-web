@@ -14,7 +14,7 @@ Environment variable    Default                         Purpose
 ``JUDGE_BASE_URL``      ``https://tokenharbor.ai/v1``   OpenAI-compatible endpoint
 ``JUDGE_API_KEY_ENV``   ``TOKENHARBOR_API_KEY``         name of the env var holding the key
 ``JUDGE_TEMPERATURE``   ``0.0``                         locked for reproducibility
-``JUDGE_MAX_OUTPUT_TOKENS``  ``700``                    JSON answers are token-hungry
+``JUDGE_MAX_OUTPUT_TOKENS``  ``3000``                   reasoning models burn tokens before the JSON
 ======================  ==============================  ==============================
 
 Switching to another provider is therefore an ``.env`` edit, for example::
@@ -70,6 +70,10 @@ _ENV_FILES = (
 _env_loaded = False
 
 _FENCE_PATTERN = re.compile(r"```(?:json)?\s*(.*?)```", re.DOTALL | re.IGNORECASE)
+
+#: A POSIX-ish environment variable name; anything else means someone pasted a
+#: secret into ``JUDGE_API_KEY_ENV`` instead of the name of the variable.
+_ENV_VAR_NAME = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
 
 #: Longest-first so ``mimo-v2.6`` is not shadowed by a shorter prefix.
 _FAMILY_PREFIXES: Tuple[Tuple[str, str], ...] = (
@@ -234,8 +238,8 @@ class JudgeConfig:
     base_url: str = DEFAULT_JUDGE_BASE_URL
     api_key_env: str = DEFAULT_JUDGE_API_KEY_ENV
     temperature: float = 0.0
-    max_output_tokens: int = 700
-    timeout_seconds: float = 60.0
+    max_output_tokens: int = 3000
+    timeout_seconds: float = 180.0
     max_retries: int = 2
     json_max_attempts: int = 3
     allow_same_family: bool = False
@@ -248,6 +252,12 @@ class JudgeConfig:
             raise ValueError(f"base_url must be an HTTP(S) URL, got {self.base_url!r}")
         if not self.api_key_env or not self.api_key_env.strip():
             raise ValueError("api_key_env must name an environment variable")
+        if not _ENV_VAR_NAME.fullmatch(self.api_key_env.strip()):
+            raise ValueError(
+                "api_key_env must name an environment variable (for example "
+                "TOKENHARBOR_API_KEY), not hold the key itself; put the secret in "
+                "the variable named here. Got a value that does not look like a name."
+            )
         if not 0.0 <= self.temperature <= 2.0:
             raise ValueError(
                 f"temperature must be between 0 and 2, got {self.temperature}"
@@ -276,7 +286,7 @@ class JudgeConfig:
             "base_url": os.getenv("JUDGE_BASE_URL", DEFAULT_JUDGE_BASE_URL),
             "api_key_env": os.getenv("JUDGE_API_KEY_ENV", DEFAULT_JUDGE_API_KEY_ENV),
             "temperature": float(os.getenv("JUDGE_TEMPERATURE", "0.0")),
-            "max_output_tokens": int(os.getenv("JUDGE_MAX_OUTPUT_TOKENS", "700")),
+            "max_output_tokens": int(os.getenv("JUDGE_MAX_OUTPUT_TOKENS", "3000")),
         }
 
         raw_attempts = os.getenv("JUDGE_JSON_MAX_ATTEMPTS")

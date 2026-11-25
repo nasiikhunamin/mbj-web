@@ -13,7 +13,9 @@ still guarantees the judge is not the generator's family.
 from __future__ import annotations
 
 import logging
+import math
 import os
+import re
 import time
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Sequence
@@ -29,6 +31,63 @@ logger = logging.getLogger(__name__)
 
 class FaithfulnessError(RuntimeError):
     """Raised when the faithfulness metric cannot be built or executed."""
+
+
+#: Bracketed source labels the generator appends ("[Sumber: ...]") are not claims.
+_SOURCE_LABEL = re.compile(r"^\[?\s*sumber\s*:", re.IGNORECASE)
+_TERMINAL_PUNCTUATION = (".", "!", "?", ":", ";")
+
+_METRIC_CLASS: Optional[type] = None
+
+
+def prompt_sentences(segments: Sequence[str], *, drop_sources: bool = True) -> List[str]:
+    """Turn answer segments into the numbered sentence list RAGAS asks about.
+
+    RAGAS 0.1.21 keeps only sentences whose stripped text ends with ``.``. Most
+    Indonesian answers are numbered/bulleted lists without a closing period per
+    line, so every sentence is dropped, the judge is asked to break down an
+    empty list, and the score silently becomes ``NaN``. Keeping all non-empty
+    segments (with a closing period added when missing) avoids that.
+    """
+    sentences: List[str] = []
+    for raw in segments:
+        text = " ".join(str(raw).split())
+        if not text:
+            continue
+        if drop_sources and _SOURCE_LABEL.match(text):
+            continue
+        if not text.endswith(_TERMINAL_PUNCTUATION):
+            text += "."
+        sentences.append(text)
+    return sentences
+
+
+def _metric_class() -> type:
+    """Build the RAGAS metric subclass once, on first use (ragas is optional)."""
+    global _METRIC_CLASS
+    if _METRIC_CLASS is not None:
+        return _METRIC_CLASS
+
+    from ragas.metrics import Faithfulness
+
+    class BulletTolerantFaithfulness(Faithfulness):
+        """RAGAS faithfulness that also reads bulleted/numbered answers."""
+
+        def _create_statements_prompt(self, row: Dict[str, Any]) -> Any:
+            answer = row["answer"]
+            segments = self.sentence_segmenter.segment(answer)
+            sentences = prompt_sentences(segments)
+            if not sentences:  # answer is only a source label or whitespace
+                sentences = prompt_sentences([answer], drop_sources=False)
+            numbered = "\n".join(
+                f"{index}:{sentence}" for index, sentence in enumerate(sentences)
+            )
+            return self.statement_prompt.format(
+                question=row["question"], answer=answer, sentences=numbered
+            )
+
+    _METRIC_CLASS = BulletTolerantFaithfulness
+    return _METRIC_CLASS
 
 
 @dataclass(frozen=True)
@@ -76,7 +135,7 @@ class RagasFaithfulnessScorer:
         try:
             from langchain_openai import ChatOpenAI
             from ragas.llms import LangchainLLMWrapper
-            from ragas.metrics import faithfulness
+            from ragas.metrics import Faithfulness
         except ImportError as exc:  # pragma: no cover - dependency guard
             raise FaithfulnessError(
                 "ragas / langchain-openai are not installed; install "
@@ -90,7 +149,9 @@ class RagasFaithfulnessScorer:
         if not api_key:
             raise FaithfulnessError(
                 f"{self.config.api_key_env} is not set; the judge needs it to score "
-                f"faithfulness."
+                f"faithfulness. JUDGE_API_KEY_ENV must hold the *name* of the variable "
+                f"that contains the key (for example TOKENHARBOR_API_KEY), and that "
+                f"variable must be set in .env."
             )
 
         llm = LangchainLLMWrapper(
@@ -104,8 +165,12 @@ class RagasFaithfulnessScorer:
             )
         )
 
-        # NOTE: `ragas.metrics.faithfulness` is a module-level singleton, so this
-        # wires the process-wide judge. One judge per run is required anyway.
+        # Our own metric instance (RAGAS ships a module-level singleton) so the
+        # bulleted-answer fix stays local to this process.
+        # Two retries because free reasoning routes occasionally spend the whole
+        # token budget on reasoning and return an empty completion.
+        faithfulness = _metric_class()()
+        faithfulness.max_retries = 2
         faithfulness.llm = llm
         self._metric = faithfulness
         return self._metric
@@ -156,8 +221,15 @@ class RagasFaithfulnessScorer:
         try:
             value = metric.score(row)
         except Exception as exc:  # noqa: BLE001 - judge/gateway boundary
+            hint = ""
+            if "timeout" in f"{type(exc).__name__} {exc}".lower():
+                hint = (
+                    f" The judge did not answer within "
+                    f"{self.config.timeout_seconds:.0f}s; slow `:free` routes may need a"
+                    f" larger JUDGE_TIMEOUT_SECONDS."
+                )
             raise FaithfulnessError(
-                f"faithfulness scoring failed: {type(exc).__name__}: {exc}"
+                f"faithfulness scoring failed: {type(exc).__name__}: {exc}{hint}"
             ) from exc
         latency_ms = (time.perf_counter() - started) * 1000.0
 
@@ -167,6 +239,14 @@ class RagasFaithfulnessScorer:
             raise FaithfulnessError(
                 f"faithfulness returned a non-numeric value: {value!r}"
             ) from exc
+
+        if math.isnan(score_value):
+            logger.warning(
+                "judge %s produced an empty or unparsable completion, so "
+                "faithfulness is NaN for this item; raise JUDGE_MAX_OUTPUT_TOKENS "
+                "if this repeats.",
+                self.config.model_name,
+            )
 
         return FaithfulnessScore(
             score=score_value,

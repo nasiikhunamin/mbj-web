@@ -6,6 +6,8 @@ from rag_service.evaluation import judge as judge_module
 from rag_service.evaluation.faithfulness import (
     FaithfulnessError,
     RagasFaithfulnessScorer,
+    _metric_class,
+    prompt_sentences,
 )
 from rag_service.evaluation.judge import JudgeConfig, JudgeError
 
@@ -117,3 +119,48 @@ def test_missing_api_key_is_reported_clearly(isolated_env):
     )
     with pytest.raises(FaithfulnessError, match="MISSING_JUDGE_KEY is not set"):
         scorer.score("q", "a", ["c"])
+
+
+# ----------------------------------------------------------------------
+# bulleted/numbered answers (RAGAS drops them, giving NaN)
+# ----------------------------------------------------------------------
+
+
+def test_prompt_sentences_keeps_bullets_and_adds_the_period():
+    segments = [
+        "Berdasarkan dokumen resmi, dokumen yang perlu disiapkan meliputi:\n\n",
+        "1. Kartu Tanda Penduduk (KTP) — fotokopi\n",
+        "2. Ijazah pendidikan terakhir — fotokopi dilegalisir\n",
+        "[Sumber: Persyaratan Dokumen]",
+    ]
+
+    assert prompt_sentences(segments) == [
+        "Berdasarkan dokumen resmi, dokumen yang perlu disiapkan meliputi:",
+        "1. Kartu Tanda Penduduk (KTP) — fotokopi.",
+        "2. Ijazah pendidikan terakhir — fotokopi dilegalisir.",
+    ]
+
+
+def test_prompt_sentences_falls_back_when_only_a_source_label_remains():
+    assert prompt_sentences(["[Sumber: Persyaratan Dokumen]"]) == []
+    assert prompt_sentences(
+        ["[Sumber: Persyaratan Dokumen]"], drop_sources=False
+    ) == ["[Sumber: Persyaratan Dokumen]."]
+
+
+def test_bulleted_answer_still_produces_statements():
+    pytest.importorskip("ragas")
+    metric = _metric_class()()
+    row = {
+        "question": "Dokumen apa saja yang disiapkan?",
+        "answer": "1. Kartu Tanda Penduduk (KTP)\n2. Ijazah terakhir\n[Sumber: Persyaratan Dokumen]",
+        "contexts": ["KTP dan ijazah diperlukan."],
+    }
+
+    prompt = metric._create_statements_prompt(row).to_string()
+
+    sentences_line = prompt.rsplit('sentences: "', 1)[1].split('"', 1)[0]
+    assert sentences_line.replace("\\n", "\n").splitlines() == [
+        "0:1. Kartu Tanda Penduduk (KTP).",
+        "1:2. Ijazah terakhir.",
+    ]

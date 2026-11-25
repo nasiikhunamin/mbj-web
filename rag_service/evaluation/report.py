@@ -37,10 +37,13 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import logging
+import math
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence
 
+from rag_service.evaluation.faithfulness import FaithfulnessError
 from rag_service.evaluation.metrics import (
     ir_metrics,
     ranked_document_ids,
@@ -49,9 +52,18 @@ from rag_service.evaluation.metrics import (
 
 DEFAULT_K = 5
 
+logger = logging.getLogger(__name__)
+
 
 class EvaluationError(RuntimeError):
     """Raised when the inputs cannot be evaluated."""
+
+
+def _is_number(value: Any) -> bool:
+    """True for scored metrics; NaN means the judge could not score the item."""
+    return isinstance(value, (int, float)) and not (
+        isinstance(value, float) and math.isnan(value)
+    )
 
 
 def answer_fingerprint(answer: str) -> str:
@@ -155,7 +167,7 @@ class ExperimentEvaluation:
 
 
 def _mean(values: Iterable[Optional[float]]) -> Optional[float]:
-    numbers = [float(v) for v in values if isinstance(v, (int, float))]
+    numbers = [float(v) for v in values if _is_number(v)]
     return sum(numbers) / len(numbers) if numbers else None
 
 
@@ -250,17 +262,33 @@ def evaluate_experiment(
                 row["faithfulness_skipped_reason"] = "judge_disabled"
                 skipped["judge_disabled"] = skipped.get("judge_disabled", 0) + 1
             else:
-                score = scorer.score(
-                    str(item.get("question") or truth.get("question") or ""),
-                    str(item.get("answer") or ""),
-                    contexts,
-                )
-                row["faithfulness"] = score.score
-                row["judge_model"] = score.requested_model
-                row["judge_base_url"] = score.base_url
-                row["judge_latency_ms"] = score.latency_ms
-                if cache:
-                    cache.put(code, item_id, fingerprint, score.score, score.requested_model)
+                try:
+                    score = scorer.score(
+                        str(item.get("question") or truth.get("question") or ""),
+                        str(item.get("answer") or ""),
+                        contexts,
+                    )
+                except FaithfulnessError as exc:
+                    # One slow/flaky judge call must not kill a multi-hour run.
+                    logger.warning(
+                        "judge gagal menilai %s/%s (%s); item ini tanpa skor: %s",
+                        code,
+                        item_id,
+                        type(exc).__name__,
+                        exc,
+                    )
+                    row["faithfulness_skipped_reason"] = "judge_error"
+                    row["faithfulness_error"] = str(exc)
+                    skipped["judge_error"] = skipped.get("judge_error", 0) + 1
+                else:
+                    row["faithfulness"] = score.score
+                    row["judge_model"] = score.requested_model
+                    row["judge_base_url"] = score.base_url
+                    row["judge_latency_ms"] = score.latency_ms
+                    if cache and not math.isnan(score.score):
+                        cache.put(
+                            code, item_id, fingerprint, score.score, score.requested_model
+                        )
 
         rows.append(row)
 
@@ -269,7 +297,7 @@ def evaluate_experiment(
         code=code,
         summary=summary,
         items=rows,
-        faithful_scored=sum(1 for r in rows if isinstance(r.get("faithfulness"), (int, float))),
+        faithful_scored=sum(1 for r in rows if _is_number(r.get("faithfulness"))),
         faithfulness_skipped=skipped,
     )
 
@@ -287,13 +315,11 @@ def summarize(code: str, rows: Sequence[Dict[str, Any]], payload: Dict[str, Any]
         "out_of_scope_items": sum(1 for r in rows if r["is_out_of_scope"]),
         "rejection_accuracy": _compact(rejection_accuracy(rows)),
         f"faithfulness_mean": _compact(_mean(r.get("faithfulness") for r in rows)),
-        "faithfulness_scored": sum(
-            1 for r in rows if isinstance(r.get("faithfulness"), (int, float))
-        ),
+        "faithfulness_scored": sum(1 for r in rows if _is_number(r.get("faithfulness"))),
         f"hit_at_{k}": _compact(_mean(r.get(f"hit_at_{k}") for r in rows)),
         f"mrr_at_{k}": _compact(_mean(r.get(f"mrr_at_{k}") for r in rows)),
         f"ndcg_at_{k}": _compact(_mean(r.get(f"ndcg_at_{k}") for r in rows)),
-        "ir_scored": sum(1 for r in rows if isinstance(r.get(f"hit_at_{k}"), (int, float))),
+        "ir_scored": sum(1 for r in rows if _is_number(r.get(f"hit_at_{k}"))),
         "context_tokens_mean": _compact(_mean(r.get("context_tokens") for r in rows)),
         "latency_ms_mean": _compact(_mean(r.get("latency_ms") for r in rows)),
     }

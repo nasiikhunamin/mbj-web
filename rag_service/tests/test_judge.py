@@ -139,6 +139,14 @@ def test_api_key_env_must_be_named():
         JudgeConfig(model_name="mimo-v2.6-flash", api_key_env="")
 
 
+def test_api_key_env_rejects_pasted_secret():
+    with pytest.raises(ValueError, match="not hold the key itself"):
+        JudgeConfig(
+            model_name="mimo-v2.6-flash",
+            api_key_env="thk_live_abc-DEF_123",
+        )
+
+
 def test_json_max_attempts_must_be_positive():
     with pytest.raises(ValueError, match="json_max_attempts"):
         JudgeConfig(model_name="mimo-v2.6-flash", json_max_attempts=0)

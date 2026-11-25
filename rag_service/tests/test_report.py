@@ -6,7 +6,7 @@ from types import SimpleNamespace
 
 import pytest
 
-from rag_service.evaluation.faithfulness import FaithfulnessScore
+from rag_service.evaluation.faithfulness import FaithfulnessError, FaithfulnessScore
 from rag_service.evaluation.report import (
     DEFAULT_K,
     EvaluationError,
@@ -228,6 +228,29 @@ def test_judge_disabled_marks_every_in_domain_item(ground_truth_file, results_fi
     )
     assert evaluation.items[0]["faithfulness_skipped_reason"] == "judge_disabled"
     assert evaluation.faithful_scored == 0
+
+
+def test_one_judge_failure_does_not_abort_the_experiment(ground_truth_file, results_file):
+    class _FlakyScorer(_StubScorer):
+        def score(self, question, answer, contexts):
+            if not self.calls:
+                self.calls.append((question, answer, tuple(contexts)))
+                raise FaithfulnessError("faithfulness scoring failed: APITimeoutError")
+            return super().score(question, answer, contexts)
+
+    evaluation = evaluate_experiment(
+        "E16",
+        load_results(results_file),
+        load_ground_truth(ground_truth_file),
+        scorer=_FlakyScorer(value=0.9),
+    )
+
+    assert evaluation.items[0]["faithfulness_skipped_reason"] == "judge_error"
+    assert "APITimeoutError" in evaluation.items[0]["faithfulness_error"]
+    assert evaluation.items[1]["faithfulness"] == 0.9
+    assert evaluation.faithfulness_skipped["judge_error"] == 1
+    assert evaluation.faithful_scored == 1
+    assert evaluation.summary["faithfulness_mean"] == 0.9
 
 
 def test_missing_context_is_skipped(ground_truth_file, results_file):
