@@ -42,6 +42,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Do not reset existing indices before indexing.",
     )
+    parser.add_argument(
+        "--exclude-file",
+        default=str(PROJECT_ROOT / "data" / "processed" / "excluded_doc_ids.json"),
+        help="JSON file listing doc_ids to skip (list, or {\"doc_ids\": [...]}).",
+    )
     return parser.parse_args()
 
 
@@ -63,6 +68,29 @@ def main() -> int:
                 indent=2,
             )
         )
+        return 1
+
+    excluded: set = set()
+    exclude_path = Path(args.exclude_file)
+    if exclude_path.exists():
+        try:
+            payload = json.loads(exclude_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            print(json.dumps({"status": "error", "message": f"invalid exclude file: {exc}"}, indent=2))
+            return 1
+        if isinstance(payload, list):
+            excluded = {str(x) for x in payload}
+        elif isinstance(payload, dict):
+            excluded = {str(x) for x in payload.get("doc_ids", [])}
+
+    if excluded:
+        kept = [d for d in documents if d.get("doc_id") not in excluded]
+        skipped = sorted({d.get("doc_id") for d in documents} & excluded)
+        print(f"[exclude] {len(documents) - len(kept)} dokumen dibuang: {skipped}")
+        documents = kept
+
+    if not documents:
+        print(json.dumps({"status": "error", "message": "all documents were excluded"}, indent=2))
         return 1
 
     report = build_indexes(
