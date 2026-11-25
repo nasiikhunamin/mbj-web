@@ -11,6 +11,7 @@ tested end-to-end without loading real models.
 
 from __future__ import annotations
 
+import os
 import time
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Sequence, Union
@@ -242,7 +243,16 @@ def build_pipeline(config: ExperimentConfig) -> RAGPipeline:
 
     reranker = None
     if config.reranker_enabled:
-        reranker = BGEReranker(model_name=config.reranker_model, top_n=config.reranker_top_n)
+        # A small batch keeps the cross-encoder inside a 4 GB GPU. Batch size
+        # only affects memory/speed, never the per-pair relevance scores.
+        # Override with RERANKER_BATCH_SIZE (e.g. 16 on a larger GPU) and force
+        # CPU with RERANKER_DEVICE=cpu if CUDA memory is still tight.
+        reranker = BGEReranker(
+            model_name=config.reranker_model,
+            top_n=config.reranker_top_n,
+            batch_size=int(os.getenv("RERANKER_BATCH_SIZE", "4")),
+            device=os.getenv("RERANKER_DEVICE") or None,
+        )
 
     from rag_service.chunkers.tokenizer import E5Tokenizer
 
