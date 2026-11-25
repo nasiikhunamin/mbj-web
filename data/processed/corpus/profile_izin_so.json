@@ -1,0 +1,22 @@
+{
+ "doc_id": "profile_izin_so",
+ "source_type": "web",
+ "title": "Izin SO MBJ Indonesia",
+ "source_file": "izin-so.blade.php",
+ "clean_text": "Izin SO\n\nHome\n\nProfile\n\nIzin SO\n\nIzin SO MBJ Indonesia\n\nKlik pada gambar untuk memperbesar",
+ "sections": [
+  {
+   "heading": "Izin SO MBJ Indonesia",
+   "text": "Izin SO\n\nHome\n\nProfile\n\nIzin SO\n\nIzin SO MBJ Indonesia\n\nKlik pada gambar untuk memperbesar"
+  }
+ ],
+ "tables": [],
+ "metadata": {
+  "faq_pairs": 0,
+  "char_count": 90,
+  "section_count": 1,
+  "token_count_e5": 20,
+  "content_type": "legal"
+ },
+ "content_type": "legal"
+}

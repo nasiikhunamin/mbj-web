@@ -1,0 +1,22 @@
+{
+ "doc_id": "profile_struktur_organisasi",
+ "source_type": "web",
+ "title": "Struktur Organisasi",
+ "source_file": "struktur-organisasi.blade.php",
+ "clean_text": "Struktur Organisasi\n\nHome\n\nProfile\n\nStruktur Organisasi\n\nFreedy Iswanto\n\nDirektur\n\nDani Lauren\n\nManager Operasional/Pemasaran\n\nJumroh Sri Ratnasari\n\nPenasihat LPK\n\nMargareth Endaris Putri\n\nSensei\n\nIrna Agustin\n\nStaff Administrasi/HRD",
+ "sections": [
+  {
+   "heading": "Struktur Organisasi",
+   "text": "Struktur Organisasi\n\nHome\n\nProfile\n\nStruktur Organisasi\n\nFreedy Iswanto\n\nDirektur\n\nDani Lauren\n\nManager Operasional/Pemasaran\n\nJumroh Sri Ratnasari\n\nPenasihat LPK\n\nMargareth Endaris Putri\n\nSensei\n\nIrna Agustin\n\nStaff Administrasi/HRD"
+  }
+ ],
+ "tables": [],
+ "metadata": {
+  "faq_pairs": 0,
+  "char_count": 233,
+  "section_count": 1,
+  "token_count_e5": 50,
+  "content_type": "catalog"
+ },
+ "content_type": "catalog"
+}

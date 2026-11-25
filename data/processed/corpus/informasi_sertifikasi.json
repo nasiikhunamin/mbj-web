@@ -1,0 +1,22 @@
+{
+ "doc_id": "informasi_sertifikasi",
+ "source_type": "web",
+ "title": "Program Sertifikasi Kami",
+ "source_file": "sertifikasi.blade.php",
+ "clean_text": "Sertifikasi\n\nHome\n\nInformasi\n\nSertifikasi\n\nProgram Sertifikasi Kami\n\nKlik pada gambar untuk mengetahui lebih lanjut",
+ "sections": [
+  {
+   "heading": "Program Sertifikasi Kami",
+   "text": "Sertifikasi\n\nHome\n\nInformasi\n\nSertifikasi\n\nProgram Sertifikasi Kami\n\nKlik pada gambar untuk mengetahui lebih lanjut"
+  }
+ ],
+ "tables": [],
+ "metadata": {
+  "faq_pairs": 0,
+  "char_count": 115,
+  "section_count": 1,
+  "token_count_e5": 17,
+  "content_type": "catalog"
+ },
+ "content_type": "catalog"
+}

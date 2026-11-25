@@ -1,0 +1,22 @@
+{
+ "doc_id": "informasi_fasilitas",
+ "source_type": "web",
+ "title": "Fasilitas Yang Kami Sediakan",
+ "source_file": "fasilitas.blade.php",
+ "clean_text": "Fasilitas\n\nHome\n\nInformasi\n\nFasilitas\n\nFasilitas Yang Kami Sediakan",
+ "sections": [
+  {
+   "heading": "Fasilitas Yang Kami Sediakan",
+   "text": "Fasilitas\n\nHome\n\nInformasi\n\nFasilitas\n\nFasilitas Yang Kami Sediakan"
+  }
+ ],
+ "tables": [],
+ "metadata": {
+  "faq_pairs": 0,
+  "char_count": 67,
+  "section_count": 1,
+  "token_count_e5": 10,
+  "content_type": "catalog"
+ },
+ "content_type": "catalog"
+}

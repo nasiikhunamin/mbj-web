@@ -1,0 +1,22 @@
+{
+ "doc_id": "informasi_prospek_karir",
+ "source_type": "web",
+ "title": "Specified Skilled Worker (SSW)",
+ "source_file": "prospek-karir.blade.php",
+ "clean_text": "Prospek Karir\n\nHome\n\nInformasi\n\nProspek Karir\n\nSpecified Skilled Worker (SSW)\n\nTemukan Jalan Menarik Menuju Masa Depan Kamu",
+ "sections": [
+  {
+   "heading": "Specified Skilled Worker (SSW)",
+   "text": "Prospek Karir\n\nHome\n\nInformasi\n\nProspek Karir\n\nSpecified Skilled Worker (SSW)\n\nTemukan Jalan Menarik Menuju Masa Depan Kamu"
+  }
+ ],
+ "tables": [],
+ "metadata": {
+  "faq_pairs": 0,
+  "char_count": 123,
+  "section_count": 1,
+  "token_count_e5": 30,
+  "content_type": "narrative"
+ },
+ "content_type": "narrative"
+}

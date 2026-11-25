@@ -1,0 +1,22 @@
+{
+ "doc_id": "profile_akreditasi",
+ "source_type": "web",
+ "title": "Akreditasi MBJ Indonesia",
+ "source_file": "akreditasi.blade.php",
+ "clean_text": "Akreditasi\n\nHome\n\nProfile\n\nAkreditasi\n\nAkreditasi MBJ Indonesia\n\nKlik pada gambar untuk memperbesar",
+ "sections": [
+  {
+   "heading": "Akreditasi MBJ Indonesia",
+   "text": "Akreditasi\n\nHome\n\nProfile\n\nAkreditasi\n\nAkreditasi MBJ Indonesia\n\nKlik pada gambar untuk memperbesar"
+  }
+ ],
+ "tables": [],
+ "metadata": {
+  "faq_pairs": 0,
+  "char_count": 99,
+  "section_count": 1,
+  "token_count_e5": 20,
+  "content_type": "legal"
+ },
+ "content_type": "legal"
+}

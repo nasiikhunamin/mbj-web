@@ -1,0 +1,486 @@
+{
+ "generated_at": "2026-11-23T07:46:17.006631+00:00",
+ "content_types": [
+  "narrative",
+  "procedural",
+  "qa_pairs",
+  "comparison",
+  "numeric",
+  "catalog",
+  "curriculum",
+  "legal"
+ ],
+ "documents": [
+  {
+   "doc_id": "daftar",
+   "source_type": "web",
+   "title": "Daftar",
+   "content_type": "procedural",
+   "token_count_e5": 0,
+   "char_count": 0,
+   "section_count": 0,
+   "sections": []
+  },
+  {
+   "doc_id": "faq_publik",
+   "source_type": "pdf",
+   "title": "Faq Publik",
+   "content_type": "qa_pairs",
+   "token_count_e5": 705,
+   "char_count": 3898,
+   "section_count": 2,
+   "sections": [
+    "Page 1",
+    "Page 2"
+   ]
+  },
+  {
+   "doc_id": "fasilitas_pelatihan",
+   "source_type": "docx",
+   "title": "Fasilitas Pelatihan",
+   "content_type": "catalog",
+   "token_count_e5": 313,
+   "char_count": 1351,
+   "section_count": 5,
+   "sections": [
+    "Fasilitas yang Kami Sediakan",
+    "Penjelasan",
+    "Catatan",
+    "Sumber & Acuan"
+   ]
+  },
+  {
+   "doc_id": "home",
+   "source_type": "web",
+   "title": "Ikuti Kelas, Bayar Setelah Kerja di Jepang!",
+   "content_type": "narrative",
+   "token_count_e5": 488,
+   "char_count": 2612,
+   "section_count": 1,
+   "sections": [
+    "Ikuti Kelas, Bayar Setelah Kerja di Jepang!"
+   ]
+  },
+  {
+   "doc_id": "informasi_biaya_hidup",
+   "source_type": "pdf",
+   "title": "Informasi Biaya Hidup",
+   "content_type": "numeric",
+   "token_count_e5": 796,
+   "char_count": 3445,
+   "section_count": 3,
+   "sections": [
+    "Page 1",
+    "Page 2",
+    "Page 3"
+   ]
+  },
+  {
+   "doc_id": "informasi_biaya_hidup_di_jepang",
+   "source_type": "web",
+   "title": "Biaya Hidup di Jepang: Apa yang Perlu Anda Ketahui?",
+   "content_type": "numeric",
+   "token_count_e5": 692,
+   "char_count": 3320,
+   "section_count": 1,
+   "sections": [
+    "Biaya Hidup di Jepang: Apa yang Perlu Anda Ketahui?"
+   ]
+  },
+  {
+   "doc_id": "informasi_fasilitas",
+   "source_type": "web",
+   "title": "Fasilitas Yang Kami Sediakan",
+   "content_type": "catalog",
+   "token_count_e5": 10,
+   "char_count": 67,
+   "section_count": 1,
+   "sections": [
+    "Fasilitas Yang Kami Sediakan"
+   ]
+  },
+  {
+   "doc_id": "informasi_pendaftaran",
+   "source_type": "web",
+   "title": "Informasi dan Alur Pendaftaran Peserta",
+   "content_type": "procedural",
+   "token_count_e5": 493,
+   "char_count": 2836,
+   "section_count": 1,
+   "sections": [
+    "Informasi dan Alur Pendaftaran Peserta"
+   ]
+  },
+  {
+   "doc_id": "informasi_perbedaan_magang_tokutei_ginou",
+   "source_type": "web",
+   "title": "Perbedaan Program Magang dan Tokutei Ginou",
+   "content_type": "comparison",
+   "token_count_e5": 443,
+   "char_count": 2426,
+   "section_count": 1,
+   "sections": [
+    "Perbedaan Program Magang dan Tokutei Ginou"
+   ]
+  },
+  {
+   "doc_id": "informasi_prospek_karir",
+   "source_type": "web",
+   "title": "Specified Skilled Worker (SSW)",
+   "content_type": "narrative",
+   "token_count_e5": 30,
+   "char_count": 123,
+   "section_count": 1,
+   "sections": [
+    "Specified Skilled Worker (SSW)"
+   ]
+  },
+  {
+   "doc_id": "informasi_sertifikasi",
+   "source_type": "web",
+   "title": "Program Sertifikasi Kami",
+   "content_type": "catalog",
+   "token_count_e5": 17,
+   "char_count": 115,
+   "section_count": 1,
+   "sections": [
+    "Program Sertifikasi Kami"
+   ]
+  },
+  {
+   "doc_id": "informasi_sertifikasi_coe",
+   "source_type": "web",
+   "title": "Informasi Sertifikasi CoE",
+   "content_type": "curriculum",
+   "token_count_e5": 320,
+   "char_count": 1625,
+   "section_count": 1,
+   "sections": [
+    "Informasi Sertifikasi CoE"
+   ]
+  },
+  {
+   "doc_id": "informasi_sertifikasi_jft",
+   "source_type": "web",
+   "title": "Informasi Sertifikasi JFT",
+   "content_type": "curriculum",
+   "token_count_e5": 1889,
+   "char_count": 9586,
+   "section_count": 1,
+   "sections": [
+    "Informasi Sertifikasi JFT"
+   ]
+  },
+  {
+   "doc_id": "informasi_sertifikasi_jlpt",
+   "source_type": "web",
+   "title": "Informasi Sertifikasi JLPT",
+   "content_type": "curriculum",
+   "token_count_e5": 1219,
+   "char_count": 4864,
+   "section_count": 1,
+   "sections": [
+    "Informasi Sertifikasi JLPT"
+   ]
+  },
+  {
+   "doc_id": "informasi_sertifikasi_ssw",
+   "source_type": "web",
+   "title": "Informasi Sertifikasi SSW",
+   "content_type": "curriculum",
+   "token_count_e5": 259,
+   "char_count": 1364,
+   "section_count": 1,
+   "sections": [
+    "Informasi Sertifikasi SSW"
+   ]
+  },
+  {
+   "doc_id": "informasi_silabus",
+   "source_type": "web",
+   "title": "Apa Saja yang Dipelajari di LPK Matahari Bulan Jepang Indonesia?",
+   "content_type": "curriculum",
+   "token_count_e5": 484,
+   "char_count": 2254,
+   "section_count": 1,
+   "sections": [
+    "Apa Saja yang Dipelajari di LPK Matahari Bulan Jepang Indonesia?"
+   ]
+  },
+  {
+   "doc_id": "jadwal_kegiatan_harian",
+   "source_type": "docx",
+   "title": "Jadwal Kegiatan Harian",
+   "content_type": "procedural",
+   "token_count_e5": 1104,
+   "char_count": 3466,
+   "section_count": 6,
+   "sections": [
+    "A. Jadwal kegiatan 05.00–16.00",
+    "B. Penerapan untuk semua tingkat siswa",
+    "C. Fokus mingguan",
+    "D. Metode pembelajaran",
+    "E. Contoh bobot penilaian (usulan)"
+   ]
+  },
+  {
+   "doc_id": "komunitas_faq",
+   "source_type": "web",
+   "title": "Frequently Asked Question",
+   "content_type": "qa_pairs",
+   "token_count_e5": 722,
+   "char_count": 4021,
+   "section_count": 1,
+   "sections": [
+    "Frequently Asked Question"
+   ]
+  },
+  {
+   "doc_id": "komunitas_galeri",
+   "source_type": "web",
+   "title": "Dokumentasi Kegiatan LPK Matahari Bulan Jepang Indonesia",
+   "content_type": "catalog",
+   "token_count_e5": 25,
+   "char_count": 124,
+   "section_count": 1,
+   "sections": [
+    "Dokumentasi Kegiatan LPK Matahari Bulan Jepang Indonesia"
+   ]
+  },
+  {
+   "doc_id": "komunitas_testimoni",
+   "source_type": "web",
+   "title": "Testimoni Alumni LPK Matahari Bulan Jepang Indonesia",
+   "content_type": "narrative",
+   "token_count_e5": 155,
+   "char_count": 829,
+   "section_count": 1,
+   "sections": [
+    "Testimoni Alumni LPK Matahari Bulan Jepang Indonesia"
+   ]
+  },
+  {
+   "doc_id": "panduan_pendaftaran",
+   "source_type": "pdf",
+   "title": "Panduan Pendaftaran",
+   "content_type": "procedural",
+   "token_count_e5": 782,
+   "char_count": 4021,
+   "section_count": 3,
+   "sections": [
+    "Page 1",
+    "Page 2",
+    "Page 3"
+   ]
+  },
+  {
+   "doc_id": "panduan_sertifikasi_jlpt",
+   "source_type": "pdf",
+   "title": "Panduan Sertifikasi Jlpt",
+   "content_type": "curriculum",
+   "token_count_e5": 1681,
+   "char_count": 6596,
+   "section_count": 5,
+   "sections": [
+    "Page 1",
+    "Page 2",
+    "Page 3",
+    "Page 4",
+    "Page 5"
+   ]
+  },
+  {
+   "doc_id": "perbandingan_magang_ssw",
+   "source_type": "pdf",
+   "title": "Perbandingan Magang Ssw",
+   "content_type": "comparison",
+   "token_count_e5": 1617,
+   "char_count": 7298,
+   "section_count": 4,
+   "sections": [
+    "Page 1",
+    "Page 2",
+    "Page 3",
+    "Page 4"
+   ]
+  },
+  {
+   "doc_id": "persyaratan_dokumen",
+   "source_type": "pdf",
+   "title": "Persyaratan Dokumen",
+   "content_type": "catalog",
+   "token_count_e5": 414,
+   "char_count": 1921,
+   "section_count": 2,
+   "sections": [
+    "Page 1",
+    "Page 2"
+   ]
+  },
+  {
+   "doc_id": "profil_lembaga",
+   "source_type": "docx",
+   "title": "Profil Lembaga",
+   "content_type": "narrative",
+   "token_count_e5": 634,
+   "char_count": 3010,
+   "section_count": 9,
+   "sections": [
+    "Tentang Kami",
+    "Visi",
+    "Misi",
+    "Struktur Organisasi",
+    "Legalitas dan Perizinan",
+    "Lokasi",
+    "Fasilitas",
+    "Sumber & Acuan"
+   ]
+  },
+  {
+   "doc_id": "profile_akreditasi",
+   "source_type": "web",
+   "title": "Akreditasi MBJ Indonesia",
+   "content_type": "legal",
+   "token_count_e5": 20,
+   "char_count": 99,
+   "section_count": 1,
+   "sections": [
+    "Akreditasi MBJ Indonesia"
+   ]
+  },
+  {
+   "doc_id": "profile_izin_so",
+   "source_type": "web",
+   "title": "Izin SO MBJ Indonesia",
+   "content_type": "legal",
+   "token_count_e5": 20,
+   "char_count": 90,
+   "section_count": 1,
+   "sections": [
+    "Izin SO MBJ Indonesia"
+   ]
+  },
+  {
+   "doc_id": "profile_legalitas",
+   "source_type": "web",
+   "title": "Izin Legalitas MBJ Indonesia",
+   "content_type": "legal",
+   "token_count_e5": 19,
+   "char_count": 101,
+   "section_count": 1,
+   "sections": [
+    "Izin Legalitas MBJ Indonesia"
+   ]
+  },
+  {
+   "doc_id": "profile_lokasi_pendidikan",
+   "source_type": "web",
+   "title": "Lokasi Pendidikan",
+   "content_type": "narrative",
+   "token_count_e5": 108,
+   "char_count": 388,
+   "section_count": 1,
+   "sections": [
+    "Lokasi Pendidikan"
+   ]
+  },
+  {
+   "doc_id": "profile_struktur_organisasi",
+   "source_type": "web",
+   "title": "Struktur Organisasi",
+   "content_type": "catalog",
+   "token_count_e5": 50,
+   "char_count": 233,
+   "section_count": 1,
+   "sections": [
+    "Struktur Organisasi"
+   ]
+  },
+  {
+   "doc_id": "profile_tentang_perusahaan",
+   "source_type": "web",
+   "title": "Visi dan Misi Kami",
+   "content_type": "narrative",
+   "token_count_e5": 418,
+   "char_count": 2295,
+   "section_count": 1,
+   "sections": [
+    "Visi dan Misi Kami"
+   ]
+  },
+  {
+   "doc_id": "prospek_karir",
+   "source_type": "docx",
+   "title": "Prospek Karir",
+   "content_type": "narrative",
+   "token_count_e5": 488,
+   "char_count": 2216,
+   "section_count": 6,
+   "sections": [
+    "Sekilas",
+    "Bidang Pekerjaan yang Tersedia",
+    "Penjelasan Singkat Tiap Bidang",
+    "Catatan",
+    "Sumber & Acuan"
+   ]
+  },
+  {
+   "doc_id": "silabus_bahasa_jepang",
+   "source_type": "docx",
+   "title": "Silabus Bahasa Jepang",
+   "content_type": "curriculum",
+   "token_count_e5": 1719,
+   "char_count": 5892,
+   "section_count": 17,
+   "sections": [
+    "1. Deskripsi",
+    "2. Capaian Pembelajaran per Kelompok",
+    "3. Pemetaan Silabus ke Jadwal Harian",
+    "4. Komponen Materi",
+    "4.1 Moji & Goi (Huruf & Kosakata)",
+    "4.2 Bunpō (Tata Bahasa)",
+    "4.3 Dokkai (Membaca)",
+    "4.4 Chōkai (Mendengar)",
+    "4.5 Kaiwa (Berbicara)",
+    "4.6 Mensetsu & Komunikasi Kerja",
+    "5. Fokus Mingguan",
+    "6. Metode Pembelajaran",
+    "7. Bahan Ajar",
+    "8. Asesmen",
+    "9. Catatan Pelaksanaan",
+    "Sumber & Acuan"
+   ]
+  },
+  {
+   "doc_id": "silabus_budaya_kerja",
+   "source_type": "docx",
+   "title": "Silabus Budaya Kerja",
+   "content_type": "curriculum",
+   "token_count_e5": 2235,
+   "char_count": 7868,
+   "section_count": 21,
+   "sections": [
+    "1. Deskripsi Mata Pelatihan",
+    "2. Capaian Pembelajaran",
+    "3. Struktur Modul",
+    "4. Rincian Modul",
+    "Modul 1 — Aisatsu & Ojigi",
+    "Modul 2 — Jikoshoukai",
+    "Modul 3 — Hou-Ren-Sou (報連相)",
+    "Modul 4 — 5S / 5R",
+    "Modul 5 — Kaizen & PDCA",
+    "Modul 6 — Keigo Dasar & Komunikasi Kerja",
+    "Modul 7 — Disiplin Waktu (Jikan Genshu)",
+    "Modul 8 — Etika Penampilan & Kartu Nama (Meishi)",
+    "Modul 9 — Keselamatan Kerja Dasar",
+    "Modul 10 — Mensetsu & Etika Wawancara",
+    "Modul 11 — Kerja Tim & Adaptasi",
+    "Modul 12 — Kehidupan Asrama & Chorei",
+    "5. Metode Pelatihan",
+    "6. Asesmen",
+    "7. Hambatan yang Perlu Diantisipasi",
+    "Sumber (referensi publik)"
+   ]
+  }
+ ]
+}

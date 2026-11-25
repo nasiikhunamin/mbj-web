@@ -1,0 +1,47 @@
+{
+ "doc_id": "fasilitas_pelatihan",
+ "source_type": "docx",
+ "title": "Fasilitas Pelatihan",
+ "source_file": "fasilitas_pelatihan.docx",
+ "clean_text": "Fasilitas Pelatihan dan Asrama\n\n# Fasilitas yang Kami Sediakan\n\nLPK Matahari Bulan Jepang Indonesia menyediakan fasilitas pendukung untuk kegiatan pelatihan dan kehidupan asrama peserta.\n\n# Penjelasan\n\nToilet: fasilitas sanitasi yang tersedia untuk peserta.\n\nDapur Bersama: mendukung kemandirian peserta dan kegiatan memasak bersama, sejalan dengan pembiasaan hidup sehat dan hemat.\n\nRuang Laundry: tempat mencuci dan menjemur pakaian peserta.\n\nRuang Kelas 1 dan Ruang Kelas 2: ruang belajar untuk materi bahasa Jepang, budaya kerja, dan kegiatan kelas lainnya.\n\nRuang Asrama: tempat tinggal peserta (asrama putra dan asrama putri) selama mengikuti pelatihan.\n\n# Catatan\n\nFasilitas ini mendukung pembiasaan 5S (kebersihan dan ketertiban) serta kemandirian peserta selama pelatihan.\n\n# Sumber & Acuan\n\nHalaman publik website LPK MBJ Indonesia — Fasilitas.\n\nHalaman publik website LPK MBJ Indonesia — Lokasi Pendidikan (asrama, ruang kelas).\n\n**Tabel 1**\n| No | Fasilitas | Keterangan |\n| --- | --- | --- |\n| 1 | Toilet | Fasilitas sanitasi peserta |\n| 2 | Dapur Bersama | Untuk kegiatan memasak bersama peserta |\n| 3 | Ruang Laundry | Tempat mencuci dan menjemur pakaian |\n| 4 | Ruang Kelas 1 | Ruang belajar teori dan praktik bahasa Jepang |\n| 5 | Ruang Kelas 2 | Ruang belajar tambahan |\n| 6 | Ruang Asrama | Tempat tinggal peserta selama pelatihan |",
+ "sections": [
+  {
+   "heading": "",
+   "level": 0,
+   "text": "Fasilitas Pelatihan dan Asrama"
+  },
+  {
+   "heading": "Fasilitas yang Kami Sediakan",
+   "level": 1,
+   "text": "LPK Matahari Bulan Jepang Indonesia menyediakan fasilitas pendukung untuk kegiatan pelatihan dan kehidupan asrama peserta."
+  },
+  {
+   "heading": "Penjelasan",
+   "level": 1,
+   "text": "Toilet: fasilitas sanitasi yang tersedia untuk peserta.\n\nDapur Bersama: mendukung kemandirian peserta dan kegiatan memasak bersama, sejalan dengan pembiasaan hidup sehat dan hemat.\n\nRuang Laundry: tempat mencuci dan menjemur pakaian peserta.\n\nRuang Kelas 1 dan Ruang Kelas 2: ruang belajar untuk materi bahasa Jepang, budaya kerja, dan kegiatan kelas lainnya.\n\nRuang Asrama: tempat tinggal peserta (asrama putra dan asrama putri) selama mengikuti pelatihan."
+  },
+  {
+   "heading": "Catatan",
+   "level": 1,
+   "text": "Fasilitas ini mendukung pembiasaan 5S (kebersihan dan ketertiban) serta kemandirian peserta selama pelatihan."
+  },
+  {
+   "heading": "Sumber & Acuan",
+   "level": 1,
+   "text": "Halaman publik website LPK MBJ Indonesia — Fasilitas.\n\nHalaman publik website LPK MBJ Indonesia — Lokasi Pendidikan (asrama, ruang kelas)."
+  }
+ ],
+ "tables": [
+  {
+   "caption": "Tabel 1",
+   "markdown_table": "**Tabel 1**\n| No | Fasilitas | Keterangan |\n| --- | --- | --- |\n| 1 | Toilet | Fasilitas sanitasi peserta |\n| 2 | Dapur Bersama | Untuk kegiatan memasak bersama peserta |\n| 3 | Ruang Laundry | Tempat mencuci dan menjemur pakaian |\n| 4 | Ruang Kelas 1 | Ruang belajar teori dan praktik bahasa Jepang |\n| 5 | Ruang Kelas 2 | Ruang belajar tambahan |\n| 6 | Ruang Asrama | Tempat tinggal peserta selama pelatihan |"
+  }
+ ],
+ "metadata": {
+  "char_count": 1351,
+  "section_count": 5,
+  "token_count_e5": 313,
+  "content_type": "catalog"
+ },
+ "content_type": "catalog"
+}

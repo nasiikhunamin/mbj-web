@@ -1,0 +1,17 @@
+{
+ "doc_id": "daftar",
+ "source_type": "web",
+ "title": "Daftar",
+ "source_file": "daftar.blade.php",
+ "clean_text": "",
+ "sections": [],
+ "tables": [],
+ "metadata": {
+  "faq_pairs": 0,
+  "char_count": 0,
+  "section_count": 0,
+  "token_count_e5": 0,
+  "content_type": "procedural"
+ },
+ "content_type": "procedural"
+}

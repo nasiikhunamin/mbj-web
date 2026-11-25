@@ -1,0 +1,22 @@
+{
+ "doc_id": "profile_legalitas",
+ "source_type": "web",
+ "title": "Izin Legalitas MBJ Indonesia",
+ "source_file": "legalitas.blade.php",
+ "clean_text": "Legalitas\n\nHome\n\nProfile\n\nLegalitas\n\nIzin Legalitas MBJ Indonesia\n\nKlik pada gambar untuk memperbesar",
+ "sections": [
+  {
+   "heading": "Izin Legalitas MBJ Indonesia",
+   "text": "Legalitas\n\nHome\n\nProfile\n\nLegalitas\n\nIzin Legalitas MBJ Indonesia\n\nKlik pada gambar untuk memperbesar"
+  }
+ ],
+ "tables": [],
+ "metadata": {
+  "faq_pairs": 0,
+  "char_count": 101,
+  "section_count": 1,
+  "token_count_e5": 19,
+  "content_type": "legal"
+ },
+ "content_type": "legal"
+}

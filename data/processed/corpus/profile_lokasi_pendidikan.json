@@ -1,0 +1,22 @@
+{
+ "doc_id": "profile_lokasi_pendidikan",
+ "source_type": "web",
+ "title": "Lokasi Pendidikan",
+ "source_file": "lokasi-pendidikan.blade.php",
+ "clean_text": "Lokasi Pendidikan\n\nHome\n\nProfile\n\nLokasi Pendidikan\n\nKunjungi Head Office Kami\n\nJl. Taman Buah Boulevard No.003 Puribeta, RT.004/RW.2, Larangan Utara, Kec. Larangan, Kota Tangerang, Banten 15154\n\nKunjungi Branch Office Kami\n\nJl. Kh. Moh. Kup No.24, RT.005/RW.001, Pinang, Kec. Pinang, Kota Tangerang, Banten 15145\n\n\" alt=\"\">\n\nRuang Kelas 1\n\nRuang Kelas 2\n\nAsrama Putra\n\nAsrama Putri\n\n--}}",
+ "sections": [
+  {
+   "heading": "Lokasi Pendidikan",
+   "text": "Lokasi Pendidikan\n\nHome\n\nProfile\n\nLokasi Pendidikan\n\nKunjungi Head Office Kami\n\nJl. Taman Buah Boulevard No.003 Puribeta, RT.004/RW.2, Larangan Utara, Kec. Larangan, Kota Tangerang, Banten 15154\n\nKunjungi Branch Office Kami\n\nJl. Kh. Moh. Kup No.24, RT.005/RW.001, Pinang, Kec. Pinang, Kota Tangerang, Banten 15145\n\n\" alt=\"\">\n\nRuang Kelas 1\n\nRuang Kelas 2\n\nAsrama Putra\n\nAsrama Putri\n\n--}}"
+  }
+ ],
+ "tables": [],
+ "metadata": {
+  "faq_pairs": 0,
+  "char_count": 388,
+  "section_count": 1,
+  "token_count_e5": 108,
+  "content_type": "narrative"
+ },
+ "content_type": "narrative"
+}
