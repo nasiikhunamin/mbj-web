@@ -46,8 +46,8 @@ except ImportError:  # pragma: no cover - dotenv is optional
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_MODEL_NAME = "deepseek-v4.1-flash:free"
-DEFAULT_BASE_URL = "https://tokenharbor.ai/v1"
+DEFAULT_MODEL_NAME = "rag-su/deepseek-v4.1-flash:free"
+DEFAULT_BASE_URL = "http://localhost:20128/v1"
 DEFAULT_API_KEY_ENV = "TOKENHARBOR_API_KEY"
 
 #: Canonical refusal sentence required by PRD section 6.5.
@@ -66,8 +66,10 @@ ATURAN KETAT:
 2. JANGAN PERNAH menyimpulkan, mengasumsikan, atau menambahkan informasi dari pengetahuan luar Anda.
 3. Jika konteks yang diberikan TIDAK MEMUAT jawaban yang ditanyakan, Anda WAJIB menjawab persis dengan kalimat:
    "Maaf, informasi mengenai hal tersebut tidak tersedia pada dokumen resmi publik LPK MBJ Indonesia. Silakan konsultasikan langsung dengan admin kami via WhatsApp."
-4. Tuliskan jawaban dalam Bahasa Indonesia yang formal, ramah, dan ringkas.
-5. Cantumkan rujukan nama dokumen sumber pada akhir jawaban dalam format: [Sumber: Nama Dokumen/File].
+4. KHUSUS pertanyaan tentang BIAYA PROGRAM, BIAYA PENDAFTARAN, BIAYA KEBERANGKATAN, CICILAN, atau PEMBAYARAN PROGRAM: JANGAN menyebut angka nominal apa pun dan JANGAN merinci komponennya. Langsung jawab persis dengan kalimat pada aturan 3 (arahkan ke WhatsApp).
+5. Pertanyaan tentang BIAYA HIDUP di Jepang (sewa asrama/apartemen, makan, transportasi, asuransi, kebutuhan sehari-hari) BUKAN termasuk aturan 4 - jawab dari konteks seperti biasa.
+6. Tuliskan jawaban dalam Bahasa Indonesia yang formal, ramah, dan ringkas.
+7. Cantumkan rujukan nama dokumen sumber pada akhir jawaban dalam format: [Sumber: Nama Dokumen/File].
 """
 
 _CITATION_PATTERN = re.compile(r"\[Sumber:\s*([^\]\n]+?)\s*\]", re.IGNORECASE)
