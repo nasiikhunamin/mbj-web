@@ -1,0 +1,672 @@
+[
+  {
+    "id": "gt-001",
+    "question": "Apa itu Certificate of Eligibility (CoE) dan siapa yang mengeluarkannya?",
+    "ground_truth_answer": "CoE (Certificate of Eligibility) adalah dokumen yang dikeluarkan oleh Otoritas Imigrasi Jepang sebagai tanda bahwa orang asing boleh memasuki Jepang sesuai tujuan/penunjukan yang diajukan. CoE diperlukan untuk mengajukan visa, dan bukan merupakan visa itu sendiri.",
+    "source_doc_ids": ["informasi_sertifikasi_coe"],
+    "source_type": "web",
+    "evidence_text": "CoE adalah dokumen yang dikeluarkan oleh Otoritas Imigrasi Jepang sebagai tanda bahwa orang asing boleh memasuki Jepang sesuai dengan tujuan/peruntukan yang diajukannya.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-002",
+    "question": "Apakah CoE sama dengan visa?",
+    "ground_truth_answer": "Bukan. CoE bukan merupakan visa; CoE harus dibawa ke kedutaan Jepang di negara asal pendaftar untuk dapat diterbitkannya visa di dalam paspor.",
+    "source_doc_ids": ["informasi_sertifikasi_coe"],
+    "source_type": "web",
+    "evidence_text": "Sertifikasi ini bukan merupakan visa dan harus dibawa ke kedutaan Jepang di negara asal pendaftar untuk dapat diterbitkannya visa dalam paspor.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-003",
+    "question": "Apa itu JFT-Basic dan apa acuan kerangkanya?",
+    "ground_truth_answer": "JFT Basic (Japan Foundation Test for Basic Japanese) adalah ujian bahasa Jepang dasar untuk orang asing yang akan bekerja di Jepang. Ujian ini mengacu pada kerangka CEFR (Common European Framework of Reference for Languages).",
+    "source_doc_ids": ["informasi_sertifikasi_jft"],
+    "source_type": "web",
+    "evidence_text": "Ujian ini mengacu pada kerangka dasar yang digunakan oleh institusi pembelajaran dan pendidikan bahasa-bahasa di Eropa",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-004",
+    "question": "Sejak kapan JFT-Basic diterapkan dan untuk keperluan apa?",
+    "ground_truth_answer": "JFT-Basic diterapkan sebagai ujian yang mengukur standar kemampuan bahasa Jepang untuk memperoleh status izin tinggal sebagai Pekerja Berketerampilan Khusus No.1, diberlakukan sejak 1 April 2019.",
+    "source_doc_ids": ["informasi_sertifikasi_jft"],
+    "source_type": "web",
+    "evidence_text": "JFT Basic akan diterapkan sebagai ujian yang mengukur standar kemampuan bahasa Jepang yang diperlukan untuk memperoleh status izin tinggal sebagai ”Pekerja Berketerampilan Khusus No.1” yang diberlakukan sejak 1 April 2019.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-005",
+    "question": "Apa itu SSW (Specified Skilled Worker)?",
+    "ground_truth_answer": "SSW (Specified Skilled Workers) adalah status izin tinggal yang diberikan kepada pekerja asing yang ingin bekerja di Jepang, diresmikan oleh pemerintah Jepang pada April 2019.",
+    "source_doc_ids": ["informasi_sertifikasi_ssw"],
+    "source_type": "web",
+    "evidence_text": "SSW (Specified Skilled Workers) adalah status izin tinggal yang diberikan kepada pekerja asing yang ingin bekerja di Jepang. SSW merupakan kebijakan keimigrasian yang diresmikan oleh pemerintah Jepang pada April 2019.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-006",
+    "question": "Apa saja persyaratan untuk mendapatkan status SSW?",
+    "ground_truth_answer": "Persyaratan SSW antara lain: berusia minimal 18 tahun; lulus JFT-Basic atau JLPT N4; lulus ujian keterampilan bidang industri tertentu; dan lulus tes wawancara perusahaan Jepang.",
+    "source_doc_ids": ["informasi_sertifikasi_ssw"],
+    "source_type": "web",
+    "evidence_text": "Berusia minimal 18 tahun",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-007",
+    "question": "Sertifikat bahasa apa yang memenuhi syarat bahasa SSW?",
+    "ground_truth_answer": "Syarat bahasa SSW dapat dipenuhi dengan lulus JFT-Basic (Ujian Dasar Bahasa Jepang) atau JLPT Level N4.",
+    "source_doc_ids": ["informasi_sertifikasi_ssw"],
+    "source_type": "web",
+    "evidence_text": "Lulus Ujian Dasar Bahasa Jepang (JFT-Basic) atau Tes Kecakapan Bahasa Jepang (JLPT) Level N4",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-008",
+    "question": "Apakah pemegang visa SSW punya hak yang sama dengan pekerja Jepang?",
+    "ground_truth_answer": "Ya. Pemegang visa SSW memiliki hak dan kewajiban yang sama dengan pekerja Jepang, termasuk gaji dan asuransi.",
+    "source_doc_ids": ["informasi_sertifikasi_ssw"],
+    "source_type": "web",
+    "evidence_text": "Pemegang visa SSW memiliki hak dan kewajiban yang sama dengan pekerja Jepang, termasuk gaji dan asuransi.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-009",
+    "question": "Materi bahasa Jepang apa yang diajarkan pada kurikulum N5-N4 di LPK MBJ Indonesia?",
+    "ground_truth_answer": "Kurikulum N5-N4 mencakup materi tata bahasa, kosakata, serta huruf Hiragana, Katakana, dan Kanji.",
+    "source_doc_ids": ["informasi_silabus"],
+    "source_type": "web",
+    "evidence_text": "Kurikulum N5-N4: Materi tata bahasa, kosakata, huruf Hiragana, Katakana, dan Kanji.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-010",
+    "question": "Berapa level yang dimiliki JLPT dan level mana yang paling dasar?",
+    "ground_truth_answer": "JLPT memiliki 5 level, dari N5 (paling dasar) sampai N1 (paling mahir).",
+    "source_doc_ids": ["panduan_sertifikasi_jlpt"],
+    "source_type": "pdf",
+    "evidence_text": "JLPT memiliki 5 level, dari N5 (paling dasar) sampai N1 (paling mahir).",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-011",
+    "question": "Apakah sertifikat JLPT punya masa berlaku?",
+    "ground_truth_answer": "Tidak. Sertifikat JLPT berlaku seumur hidup, tanpa masa kedaluwarsa.",
+    "source_doc_ids": ["panduan_sertifikasi_jlpt"],
+    "source_type": "pdf",
+    "evidence_text": "Sertifikat JLPT berlaku seumur hidup, tanpa masa kedaluwarsa.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-012",
+    "question": "Sejak kapan LPK Matahari Bulan Jepang Indonesia didirikan?",
+    "ground_truth_answer": "LPK Matahari Bulan Jepang Indonesia didirikan sejak 20 Mei 2023 dan telah mendapatkan izin usaha dari Kementerian Ketenagakerjaan RI pada tahun 2023.",
+    "source_doc_ids": ["profil_lembaga"],
+    "source_type": "docx",
+    "evidence_text": "LPK Matahari Bulan Jepang Indonesia didirikan sejak 20 Mei 2023 dan telah mendapatkan izin usaha dari Kementerian Ketenagakerjaan RI pada tahun 2023.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-013",
+    "question": "Apa itu LPK Matahari Bulan Jepang Indonesia?",
+    "ground_truth_answer": "LPK Matahari Bulan Jepang Indonesia adalah lembaga pendidikan Bahasa Jepang dan pelatihan kerja untuk mempersiapkan tenaga kerja yang handal, khususnya ke Jepang.",
+    "source_doc_ids": ["profil_lembaga", "profile_tentang_perusahaan"],
+    "source_type": "docx",
+    "evidence_text": "LPK Matahari Bulan Jepang Indonesia merupakan Lembaga pendidikan Bahasa Jepang dan pelatihan kerja untuk mempersiapkan tenaga kerja yang handal khususnya ke Jepang.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-014",
+    "question": "Siapa saja yang bisa mendaftar program magang di LPK MBJ Indonesia?",
+    "ground_truth_answer": "Program magang terbuka bagi Warga Negara Indonesia berusia 18 hingga 30 tahun, berpendidikan minimal SMA/SMK, dan memiliki niat untuk belajar dan bekerja di Jepang.",
+    "source_doc_ids": ["faq_publik"],
+    "source_type": "pdf",
+    "evidence_text": "Program magang ini terbuka bagi warga negara Indonesia yang memiliki usia 18 hingga 30 tahun, berpendidikan minimal SMA/SMK, dan memiliki niat untuk belajar dan bekerja di Jepang.",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-015",
+    "question": "Siapa penanggung jawab struktur organisasi sebagai Direktur di LPK MBJ Indonesia?",
+    "ground_truth_answer": "Direktur LPK MBJ Indonesia adalah Freedy Iswanto.",
+    "source_doc_ids": ["profile_struktur_organisasi"],
+    "source_type": "web",
+    "evidence_text": "Freedy Iswanto",
+    "category": "factual",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-016",
+    "question": "Apa saja tahapan yang dilalui peserta mulai dari pendaftaran hingga memulai magang di Jepang?",
+    "ground_truth_answer": "Tahapan tersebut meliputi: Registration (pendaftaran), Interview dan Psikotes Pertama, Medical Check Up Pertama, Belajar Bahasa Jepang/Peraturan/Etika, Interview Rekrutmen dengan Perusahaan, Aplikasi Paspor/CoE/Visa, Medical Check Up Sebelum Keberangkatan, Orientasi Sebelum Keberangkatan dan Berangkat, lalu Memulai Magang Teknis di Jepang.",
+    "source_doc_ids": ["panduan_pendaftaran"],
+    "source_type": "pdf",
+    "evidence_text": "Calon peserta melakukan pendaftaran di LPK Matahari Bulan Jepang Indonesia.",
+    "category": "procedural",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-017",
+    "question": "Apa yang dilakukan peserta pada tahap psikotes dan wawancara pertama dengan LPK?",
+    "ground_truth_answer": "Pada tahap ini calon peserta menjalani wawancara awal dan psikotes untuk menilai kesiapan mental dan kecocokan dengan program magang, serta memastikan peserta memiliki kemampuan yang diperlukan untuk bekerja di Jepang.",
+    "source_doc_ids": ["panduan_pendaftaran"],
+    "source_type": "pdf",
+    "evidence_text": "Setelah pendaftaran, calon peserta menjalani wawancara awal dan psikotes untuk menilai kesiapan mental dan kecocokan dengan program magang.",
+    "category": "procedural",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-018",
+    "question": "Apa tujuan Medical Check Up Pertama dalam alur pendaftaran?",
+    "ground_truth_answer": "Medical Check Up Pertama adalah pemeriksaan kesehatan awal untuk memastikan calon peserta dalam kondisi fisik yang baik dan tidak memiliki penyakit yang dapat menghalangi keberangkatan atau kelancaran magang di Jepang.",
+    "source_doc_ids": ["panduan_pendaftaran"],
+    "source_type": "pdf",
+    "evidence_text": "Tahap ini melibatkan pemeriksaan kesehatan awal untuk memastikan calon peserta dalam kondisi fisik yang baik dan tidak memiliki penyakit yang dapat menghalangi keberangkatan atau kelancaran magang di Jepang.",
+    "category": "procedural",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-019",
+    "question": "Dokumen apa saja yang diajukan peserta pada tahap setelah diterima perusahaan?",
+    "ground_truth_answer": "Setelah diterima perusahaan, peserta mengajukan aplikasi paspor, Certificate of Eligibility (CoE), dan visa magang untuk memperoleh izin resmi tinggal dan bekerja di Jepang.",
+    "source_doc_ids": ["panduan_pendaftaran"],
+    "source_type": "pdf",
+    "evidence_text": "Setelah diterima perusahaan, peserta mengajukan aplikasi paspor, Certificate of Eligibility (CoE), dan visa magang.",
+    "category": "procedural",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-020",
+    "question": "Apa yang dilakukan pada tahap orientasi sebelum keberangkatan?",
+    "ground_truth_answer": "Peserta mendapatkan orientasi mengenai kehidupan dan pekerjaan di Jepang, termasuk informasi terkait penerbangan, kedatangan di Jepang, dan pengaturan tempat tinggal. Setelah orientasi, peserta diberangkatkan ke Jepang.",
+    "source_doc_ids": ["panduan_pendaftaran"],
+    "source_type": "pdf",
+    "evidence_text": "Peserta mendapatkan orientasi mengenai kehidupan dan pekerjaan di Jepang",
+    "category": "procedural",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-021",
+    "question": "Bagaimana tahapan verifikasi dokumen pendaftaran peserta?",
+    "ground_truth_answer": "Peserta menyerahkan berkas kepada bagian administrasi, berkas diperiksa kelengkapan dan keabsahannya, berkas yang belum lengkap diminta dilengkapi sesuai tenggat, lalu setelah lengkap peserta mengikuti tahapan seleksi berikutnya.",
+    "source_doc_ids": ["persyaratan_dokumen"],
+    "source_type": "pdf",
+    "evidence_text": "Berkas diperiksa kelengkapan dan keabsahannya.",
+    "category": "procedural",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-022",
+    "question": "Bagaimana cara mendaftar ke LPK Matahari Bulan Jepang Indonesia?",
+    "ground_truth_answer": "Calon peserta dapat mendaftar secara online melalui WhatsApp resmi atau datang langsung ke kantor untuk mengisi formulir pendaftaran dan mengikuti tahapan seleksi.",
+    "source_doc_ids": ["faq_publik", "komunitas_faq"],
+    "source_type": "pdf",
+    "evidence_text": "Anda bisa mendaftar secara online melalui wa kami atau datang langsung ke kantor kami",
+    "category": "procedural",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-023",
+    "question": "Bagaimana alur memulai magang teknis setelah peserta tiba di Jepang?",
+    "ground_truth_answer": "Setelah tiba di Jepang, peserta memulai program magang teknis sesuai bidang yang ditentukan dan bekerja di perusahaan penempatan untuk memperdalam keterampilan teknis.",
+    "source_doc_ids": ["panduan_pendaftaran"],
+    "source_type": "pdf",
+    "evidence_text": "peserta memulai program magang teknis sesuai bidang yang ditentukan",
+    "category": "procedural",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-024",
+    "question": "Apa saja syarat usia dan pendidikan untuk mengikuti program magang?",
+    "ground_truth_answer": "Calon peserta harus berusia 18 sampai 30 tahun dan berpendidikan minimal SMA/SMK.",
+    "source_doc_ids": ["persyaratan_dokumen"],
+    "source_type": "pdf",
+    "evidence_text": "Usia 18 sampai 30 tahun.",
+    "category": "procedural",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-025",
+    "question": "Dokumen administratif apa yang berkaitan dengan catatan kepolisian calon peserta?",
+    "ground_truth_answer": "Peserta perlu menyiapkan SKCK (Surat Keterangan Catatan Kepolisian) dari kepolisian setempat. Selain itu, peserta tidak boleh memiliki riwayat kriminal.",
+    "source_doc_ids": ["persyaratan_dokumen"],
+    "source_type": "pdf",
+    "evidence_text": "Tidak memiliki riwayat kriminal.",
+    "category": "catalog",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-026",
+    "question": "Berapa lama proses dari pendaftaran hingga keberangkatan ke Jepang?",
+    "ground_truth_answer": "Proses dari pendaftaran hingga keberangkatan biasanya memakan waktu sekitar 6–12 bulan, tergantung proses seleksi, pelatihan bahasa Jepang, dan pengurusan dokumen.",
+    "source_doc_ids": ["faq_publik"],
+    "source_type": "pdf",
+    "evidence_text": "Proses dari pendaftaran hingga keberangkatan biasanya memakan waktu sekitar 6–12 bulan, tergantung pada berbagai faktor seperti proses seleksi, pelatihan bahasa Jepang, dan pengurusan dokumen",
+    "category": "numeric",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-027",
+    "question": "Berapa kisaran biaya sewa asrama pekerja/magang per bulan di Jepang?",
+    "ground_truth_answer": "Banyak perusahaan menyediakan asrama dengan biaya terjangkau, mulai dari ¥10.000 hingga ¥30.000 per bulan.",
+    "source_doc_ids": ["informasi_biaya_hidup"],
+    "source_type": "pdf",
+    "evidence_text": "banyak perusahaan menyediakan asrama dengan biaya terjangkau, mulai dari ¥10.000 hingga ¥30.000 per bulan",
+    "category": "numeric",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-028",
+    "question": "Berapa kisaran biaya sewa apartemen pribadi per bulan di Jepang?",
+    "ground_truth_answer": "Biaya sewa apartemen pribadi berkisar ¥40.000 hingga ¥100.000 per bulan, tergantung lokasi dan fasilitas. Kota besar seperti Tokyo biasanya lebih mahal.",
+    "source_doc_ids": ["informasi_biaya_hidup"],
+    "source_type": "pdf",
+    "evidence_text": "biaya berkisar ¥40.000 hingga ¥100.000 per bulan, tergantung lokasi dan fasilitas",
+    "category": "numeric",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-029",
+    "question": "Berapa rata-rata biaya utilitas (listrik, gas, air) per bulan?",
+    "ground_truth_answer": "Biaya utilitas seperti listrik, gas, dan air rata-rata ¥10.000 hingga ¥20.000 per bulan.",
+    "source_doc_ids": ["informasi_biaya_hidup"],
+    "source_type": "pdf",
+    "evidence_text": "rata-rata ¥10.000 hingga ¥20.000 per bulan",
+    "category": "numeric",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-030",
+    "question": "Berapa biaya makan di restoran murah seperti kedai ramen atau donburi per porsi?",
+    "ground_truth_answer": "Harga makanan di restoran murah seperti kedai ramen atau donburi berkisar ¥500 hingga ¥1.000 per porsi.",
+    "source_doc_ids": ["informasi_biaya_hidup"],
+    "source_type": "pdf",
+    "evidence_text": "harga makanan di restoran murah seperti kedai ramen atau donburi berkisar ¥500 hingga ¥1.000 per porsi",
+    "category": "numeric",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-031",
+    "question": "Berapa biaya asuransi kesehatan nasional untuk pekerja baru di Jepang?",
+    "ground_truth_answer": "Biaya asuransi kesehatan nasional (National Health Insurance) tergantung penghasilan, rata-rata berkisar ¥2.000 hingga ¥5.000 per bulan untuk pekerja baru. Dengan asuransi ini peserta hanya membayar 30% dari total biaya medis.",
+    "source_doc_ids": ["informasi_biaya_hidup"],
+    "source_type": "pdf",
+    "evidence_text": "rata-rata berkisar ¥2.000 hingga ¥5.000 per bulan untuk pekerja baru",
+    "category": "numeric",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-032",
+    "question": "Berapa harga sepeda bekas untuk menghemat biaya transportasi?",
+    "ground_truth_answer": "Sepeda bekas dapat dibeli dengan harga ¥5.000 hingga ¥10.000.",
+    "source_doc_ids": ["informasi_biaya_hidup"],
+    "source_type": "pdf",
+    "evidence_text": "Sepeda bekas dapat dibeli dengan harga ¥5.000 hingga ¥10.000.",
+    "category": "numeric",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-033",
+    "question": "Berapa biaya transportasi kereta atau bus sekali jalan di Jepang?",
+    "ground_truth_answer": "Biaya rata-rata naik kereta atau bus sekali jalan berkisar ¥200 hingga ¥400.",
+    "source_doc_ids": ["informasi_biaya_hidup"],
+    "source_type": "pdf",
+    "evidence_text": "biaya rata-rata sekali jalan berkisar ¥200 hingga ¥400",
+    "category": "numeric",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-034",
+    "question": "Berapa bobot penilaian untuk komponen Bahasa Jepang (kosakata, bunpō, membaca)?",
+    "ground_truth_answer": "Bobot penilaian komponen Bahasa Jepang: kosakata, bunpō, membaca adalah 40%.",
+    "source_doc_ids": ["silabus_bahasa_jepang", "jadwal_kegiatan_harian"],
+    "source_type": "docx",
+    "evidence_text": "Bahasa Jepang: kosakata, bunpō, membaca",
+    "category": "numeric",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-035",
+    "question": "Apa perbedaan durasi antara program magang biasa dan Tokutei Ginou?",
+    "ground_truth_answer": "Program magang biasanya lebih singkat (beberapa bulan sampai satu-dua tahun), sedangkan Tokutei Ginou berlangsung lebih lama, biasanya antara 1 hingga 5 tahun.",
+    "source_doc_ids": ["informasi_perbedaan_magang_tokutei_ginou"],
+    "source_type": "web",
+    "evidence_text": "Durasi program Tokutei Ginou lebih lama dibandingkan magang, biasanya berlangsung antara 1 hingga 5 tahun.",
+    "category": "comparison",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-036",
+    "question": "Bagaimana perbedaan status peserta pada program magang teknis (Ginou Jisshu) dibanding Tokutei Ginou (SSW)?",
+    "ground_truth_answer": "Pada Ginou Jisshu peserta berangkat sebagai pemagang, bukan pekerja penuh, sehingga hak kerjanya terbatas. Pada Tokutei Ginou (SSW) peserta diakui sebagai pekerja dengan hak setara pekerja Jepang.",
+    "source_doc_ids": ["perbandingan_magang_ssw"],
+    "source_type": "pdf",
+    "evidence_text": "Peserta berangkat sebagai pemagang, bukan pekerja penuh.",
+    "category": "comparison",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-037",
+    "question": "Mana yang lebih lama tinggalnya, SSW Tipe 1 atau SSW Tipe 2?",
+    "ground_truth_answer": "SSW Tipe 2 lebih lama: SSW Tipe 1 berlaku maksimal 5 tahun dan dapat diperpanjang per tahun, sedangkan SSW Tipe 2 memberikan izin tinggal tanpa batas waktu dan memungkinkan membawa keluarga.",
+    "source_doc_ids": ["perbandingan_magang_ssw"],
+    "source_type": "pdf",
+    "evidence_text": "SSW Tipe 2: tanpa batas waktu",
+    "category": "comparison",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-038",
+    "question": "Apa perbedaan syarat bahasa antara program magang dan Tokutei Ginou?",
+    "ground_truth_answer": "Program magang umumnya tidak menuntut kemampuan bahasa Jepang tinggi saat awal keberangkatan, sedangkan calon pekerja Tokutei Ginou wajib lulus ujian bahasa Jepang (JLPT N4 atau JFT-Basic A2) dan ujian keterampilan khusus.",
+    "source_doc_ids": ["perbandingan_magang_ssw"],
+    "source_type": "pdf",
+    "evidence_text": "calon pekerja Tokutei Ginou wajib lulus ujian bahasa Jepang",
+    "category": "comparison",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-039",
+    "question": "Apakah peserta magang bisa beralih ke Tokutei Ginou?",
+    "ground_truth_answer": "Bisa. Peserta magang dapat melanjutkan ke Tokutei Ginou bila memenuhi syarat; peserta yang menyelesaikan magang teknis tahap ii dapat dibebaskan dari ujian bahasa bila melanjutkan ke bidang yang sesuai. Status izin tinggal kemudian diubah menjadi Tokutei Ginou.",
+    "source_doc_ids": ["perbandingan_magang_ssw"],
+    "source_type": "pdf",
+    "evidence_text": "Status izin tinggal diubah menjadi Tokutei Ginou.",
+    "category": "comparison",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-040",
+    "question": "Apa pengganti program Technical Intern Training (Ginou Jisshu) ke depan?",
+    "ground_truth_answer": "Program Technical Intern Training (技能実習) akan digantikan oleh skema baru bernama Ikusei Shuro (育成就労) yang memberi status lebih kuat kepada peserta.",
+    "source_doc_ids": ["perbandingan_magang_ssw"],
+    "source_type": "pdf",
+    "evidence_text": "akan digantikan oleh skema baru",
+    "category": "comparison",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-041",
+    "question": "Bidang pekerjaan apa saja yang tersedia pada program SSW menurut LPK MBJ Indonesia?",
+    "ground_truth_answer": "Bidang yang tersedia antara lain: Agriculture, Caregiver, Cleaning Service, Construction, Industry, Manufacture, Nurse, dan Food Service.",
+    "source_doc_ids": ["prospek_karir"],
+    "source_type": "docx",
+    "evidence_text": "Merawat dan membantu aktivitas harian para lansia di fasilitas kesehatan atau rumah",
+    "category": "catalog",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-042",
+    "question": "Apa pekerjaan yang dilakukan pada bidang Agriculture Job?",
+    "ground_truth_answer": "Agriculture Job meliputi bertani, berkebun, dan pekerjaan lain yang terkait dengan produksi hasil tani.",
+    "source_doc_ids": ["prospek_karir"],
+    "source_type": "docx",
+    "evidence_text": "Bertani, berkebun, dan pekerjaan lain yang terkait dengan produksi hasil tani",
+    "category": "catalog",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-043",
+    "question": "Fasilitas apa saja yang disediakan LPK MBJ Indonesia untuk peserta?",
+    "ground_truth_answer": "Fasilitas yang disediakan antara lain: toilet, dapur bersama, ruang laundry, ruang kelas 1 dan 2, serta ruang asrama.",
+    "source_doc_ids": ["fasilitas_pelatihan"],
+    "source_type": "docx",
+    "evidence_text": "Dapur Bersama",
+    "category": "catalog",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-044",
+    "question": "Fasilitas apa yang mendukung kegiatan mencuci pakaian peserta?",
+    "ground_truth_answer": "LPK menyediakan Ruang Laundry sebagai tempat mencuci dan menjemur pakaian peserta.",
+    "source_doc_ids": ["fasilitas_pelatihan"],
+    "source_type": "docx",
+    "evidence_text": "Ruang Laundry",
+    "category": "catalog",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-045",
+    "question": "Apa nama buku utama yang dipakai pada materi inti Bahasa Jepang?",
+    "ground_truth_answer": "Materi inti Bahasa Jepang menggunakan buku Minna no Nihongo.",
+    "source_doc_ids": ["silabus_bahasa_jepang"],
+    "source_type": "docx",
+    "evidence_text": "Minna no Nihongo",
+    "category": "catalog",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-046",
+    "question": "Apa saja dokumen administratif yang perlu disiapkan calon peserta?",
+    "ground_truth_answer": "Dokumen tersebut antara lain: KTP, Kartu Keluarga, akta kelahiran, ijazah terakhir (minimal SMA/SMK), SKCK, pas foto, surat izin orang tua/pasangan, surat keterangan sehat, buku rekening bank, dan paspor (bila sudah ada).",
+    "source_doc_ids": ["persyaratan_dokumen"],
+    "source_type": "pdf",
+    "evidence_text": "Ijazah pendidikan terakhir Fotokopi dilegalisir (minimal SMA/SMK)",
+    "category": "catalog",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-047",
+    "question": "Apa saja yang menjadi bagian prinsip 5S dalam budaya kerja Jepang?",
+    "ground_truth_answer": "5S terdiri dari Seiri (ringkas/pemilahan), Seiton (rapi/penataan), Seiso (resik/pembersihan), Seiketsu (rawat/standardisasi), dan Shitsuke (rajin/disiplin).",
+    "source_doc_ids": ["silabus_budaya_kerja"],
+    "source_type": "docx",
+    "evidence_text": "Seiri, Seiton, Seiso, Seiketsu, Shitsuke",
+    "category": "curriculum",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-048",
+    "question": "Apa itu prinsip Hou-Ren-Sou?",
+    "ground_truth_answer": "Hou-Ren-Sou adalah prinsip komunikasi kerja Jepang yang terdiri dari Houkoku (melaporkan), Renraku (menghubungi), dan Soudan (mengkonsultasikan).",
+    "source_doc_ids": ["silabus_budaya_kerja"],
+    "source_type": "docx",
+    "evidence_text": "Houkoku (melaporkan), Renraku (menghubungi), Soudan (mengkonsultasikan)",
+    "category": "curriculum",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-049",
+    "question": "Apa itu kaizen dalam budaya kerja Jepang?",
+    "ground_truth_answer": "Kaizen (改善) adalah perbaikan kecil namun terus-menerus, bukan perubahan besar yang langka, dan dijalankan melalui siklus PDCA (Plan–Do–Check–Act).",
+    "source_doc_ids": ["silabus_budaya_kerja"],
+    "source_type": "docx",
+    "evidence_text": "perbaikan kecil namun terus-menerus",
+    "category": "curriculum",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-050",
+    "question": "Berapa total jam pelatihan (JP) silabus budaya kerja Jepang?",
+    "ground_truth_answer": "Total silabus budaya kerja Jepang adalah 40 JP (1 JP = 45 menit).",
+    "source_doc_ids": ["silabus_budaya_kerja"],
+    "source_type": "docx",
+    "evidence_text": "40 JP",
+    "category": "curriculum",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-051",
+    "question": "Apa materi kelompok Menengah/N4 dalam silabus bahasa Jepang?",
+    "ground_truth_answer": "Kelompok Menengah/N4 mempelajari bunpō N4, chōkai lebih panjang, percakapan kerja, dan laporan sederhana, dengan target menjawab spontan dan memahami instruksi pekerjaan.",
+    "source_doc_ids": ["silabus_bahasa_jepang"],
+    "source_type": "docx",
+    "evidence_text": "Menjawab spontan dan memahami instruksi pekerjaan",
+    "category": "curriculum",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-052",
+    "question": "Apa materi kelompok Dasar/N5 dalam silabus bahasa Jepang?",
+    "ground_truth_answer": "Kelompok Dasar/N5 mempelajari Hiragana–katakana, kosakata dasar, pola kalimat, dan kaiwa sederhana.",
+    "source_doc_ids": ["silabus_bahasa_jepang"],
+    "source_type": "docx",
+    "evidence_text": "Hiragana–katakana, kosakata dasar, pola kalimat, kaiwa sederhana",
+    "category": "curriculum",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-053",
+    "question": "Apa saja kegiatan utama bahasa Jepang pada jadwal harian siswa?",
+    "ground_truth_answer": "Kegiatan utama antara lain Bahasa Jepang I (materi inti), Bahasa Jepang II (kosakata, bunpō, membaca), Kaiwa (percakapan), Chōkai dan pelafalan, serta mensetsu/simulasi situasi kerja.",
+    "source_doc_ids": ["jadwal_kegiatan_harian"],
+    "source_type": "docx",
+    "evidence_text": "Bahasa Jepang I: materi inti",
+    "category": "curriculum",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-054",
+    "question": "Apa itu JFT-Basic menurut halaman sertifikasi LPK?",
+    "ground_truth_answer": "JFT-Basic adalah Ujian Bahasa Jepang Dasar yang menjadi tolak ukur bagi orang asing yang akan bekerja di Jepang, dan diselenggarakan dalam bentuk Ujian Berbasis Komputer (CBT).",
+    "source_doc_ids": ["informasi_sertifikasi_jft"],
+    "source_type": "web",
+    "evidence_text": "Ujian ini diselenggarakan dengan bentuk Ujian Berbasis Komputer",
+    "category": "curriculum",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-055",
+    "question": "Apa saja jenis dokumen legalitas yang dimiliki LPK MBJ Indonesia?",
+    "ground_truth_answer": "LPK MBJ Indonesia memiliki dokumen legalitas dan perizinan yang meliputi Akreditasi, Izin SO (Sending Organization), dan Izin Legalitas.",
+    "source_doc_ids": ["profil_lembaga", "profile_legalitas", "profile_izin_so", "profile_akreditasi"],
+    "source_type": "docx",
+    "evidence_text": "Izin SO (Sending Organization)",
+    "category": "legal",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-056",
+    "question": "Apa dasar hukum/keimigrasian yang mewajibkan orang asing memiliki CoE sebelum bekerja di Jepang?",
+    "ground_truth_answer": "CoE dikeluarkan oleh Otoritas Imigrasi Jepang sebagai syarat wajib bekerja di Jepang, dan diperlukan untuk mengajukan permohonan visa ke Perwakilan Jepang di Indonesia.",
+    "source_doc_ids": ["informasi_sertifikasi_coe"],
+    "source_type": "web",
+    "evidence_text": "Setiap orang yang akan bekerja di Jepang harus mempunyai CoE atau Certificate of Eligibility (CoE).",
+    "category": "legal",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-057",
+    "question": "Untuk SSW, dokumen apa yang harus dimiliki CPMI agar visa dapat dikeluarkan?",
+    "ground_truth_answer": "Untuk SSW, visa baru dapat dikeluarkan oleh Perwakilan Jepang di Indonesia jika CPMI telah memiliki e-ID yang dikeluarkan oleh BP2MI.",
+    "source_doc_ids": ["informasi_sertifikasi_coe"],
+    "source_type": "web",
+    "evidence_text": "visa baru dapat dikeluarkan oleh Perwakilan Jepang di Indonesia jika CPMI telah memiliki e-ID yang dikeluarkan oleh BP2MI",
+    "category": "legal",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-058",
+    "question": "Apakah LPK MBJ Indonesia memiliki izin usaha resmi?",
+    "ground_truth_answer": "Ya. LPK Matahari Bulan Jepang Indonesia telah mendapatkan izin usaha dari Kementerian Ketenagakerjaan RI pada tahun 2023.",
+    "source_doc_ids": ["profil_lembaga"],
+    "source_type": "docx",
+    "evidence_text": "telah mendapatkan izin usaha dari Kementerian Ketenagakerjaan RI pada tahun 2023",
+    "category": "legal",
+    "is_out_of_scope": false
+  },
+  {
+    "id": "gt-059",
+    "question": "Siapa presiden Jepang saat ini?",
+    "ground_truth_answer": "Maaf, informasi mengenai hal tersebut tidak tersedia pada dokumen resmi publik.",
+    "source_doc_ids": [],
+    "source_type": null,
+    "evidence_text": "",
+    "category": "out_of_scope",
+    "is_out_of_scope": true
+  },
+  {
+    "id": "gt-060",
+    "question": "Berapa harga tiket pesawat Jakarta–Tokyo bulan depan?",
+    "ground_truth_answer": "Maaf, informasi mengenai hal tersebut tidak tersedia pada dokumen resmi publik.",
+    "source_doc_ids": [],
+    "source_type": null,
+    "evidence_text": "",
+    "category": "out_of_scope",
+    "is_out_of_scope": true
+  },
+  {
+    "id": "gt-061",
+    "question": "Bagaimana cara membuat sushi salmon?",
+    "ground_truth_answer": "Maaf, informasi mengenai hal tersebut tidak tersedia pada dokumen resmi publik.",
+    "source_doc_ids": [],
+    "source_type": null,
+    "evidence_text": "",
+    "category": "out_of_scope",
+    "is_out_of_scope": true
+  },
+  {
+    "id": "gt-062",
+    "question": "Berapa populasi kota Tokyo saat ini?",
+    "ground_truth_answer": "Maaf, informasi mengenai hal tersebut tidak tersedia pada dokumen resmi publik.",
+    "source_doc_ids": [],
+    "source_type": null,
+    "evidence_text": "",
+    "category": "out_of_scope",
+    "is_out_of_scope": true
+  },
+  {
+    "id": "gt-063",
+    "question": "Apa itu anime Naruto dan siapa tokoh utamanya?",
+    "ground_truth_answer": "Maaf, informasi mengenai hal tersebut tidak tersedia pada dokumen resmi publik.",
+    "source_doc_ids": [],
+    "source_type": null,
+    "evidence_text": "",
+    "category": "out_of_scope",
+    "is_out_of_scope": true
+  },
+  {
+    "id": "gt-064",
+    "question": "Bagaimana cara memperpanjang visa turis Jepang?",
+    "ground_truth_answer": "Maaf, informasi mengenai hal tersebut tidak tersedia pada dokumen resmi publik.",
+    "source_doc_ids": [],
+    "source_type": null,
+    "evidence_text": "",
+    "category": "out_of_scope",
+    "is_out_of_scope": true
+  },
+  {
+    "id": "gt-065",
+    "question": "Berapa gaji rata-rata insinyur software di Tokyo?",
+    "ground_truth_answer": "Maaf, informasi mengenai hal tersebut tidak tersedia pada dokumen resmi publik.",
+    "source_doc_ids": [],
+    "source_type": null,
+    "evidence_text": "",
+    "category": "out_of_scope",
+    "is_out_of_scope": true
+  },
+  {
+    "id": "gt-066",
+    "question": "Berapa biaya programnya? Apakah bisa dicicil?",
+    "ground_truth_answer": "Maaf, informasi mengenai biaya spesifik program tidak tersedia pada dokumen resmi publik. Dokumen hanya menyebutkan bahwa biaya program mencakup pendaftaran, pelatihan, pemeriksaan medis, visa, dan administrasi; silakan menghubungi customer service untuk informasi biaya.",
+    "source_doc_ids": ["faq_publik"],
+    "source_type": "pdf",
+    "evidence_text": "Informasi lebih lengkap mengenai biaya dapat dilihat pada halaman biaya di website kami atau dengan menghubungi customer service kami.",
+    "category": "ambiguous",
+    "is_out_of_scope": true
+  },
+  {
+    "id": "gt-067",
+    "question": "Apakah saya pasti diterima jika mendaftar sekarang?",
+    "ground_truth_answer": "Maaf, saya tidak menemukan informasi bahwa pendaftaran menjamin penerimaan. Penerimaan bergantung pada tahapan seleksi yang ditentukan LPK.",
+    "source_doc_ids": [],
+    "source_type": null,
+    "evidence_text": "",
+    "category": "ambiguous",
+    "is_out_of_scope": true
+  }
+]
