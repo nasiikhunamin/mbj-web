@@ -1,0 +1,234 @@
+{
+ "E05|gt-001|1e5051e2cedf0b42": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-002|ce2f8e485cf636de": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-003|69183e751094dbeb": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-004|8212de58700f80fd": {
+  "faithfulness": 0.75,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-005|90d28ebcb03a002f": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-006|df6fafce87bf0d18": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-007|5b7f2baa642c0a7d": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-008|99272a4ffa9be0f7": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-009|5b41556a132a9ba4": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-010|5586afd5b0835159": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-011|5d0671f487462237": {
+  "faithfulness": 0.75,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-012|64f91a91bf25df3a": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-013|e5fca8a652cdbb88": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-014|c9428b47ffccc9bc": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-015|495669fc52c89432": {
+  "faithfulness": 0.5,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-016|0fc8a2a49208d86c": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-017|35d8672c84085436": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-018|027c376150aced3c": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-019|b50b2a3fa9297988": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-020|44e607aa95b914aa": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-021|a0b25b35f758e5a7": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-022|34e62a84aea5e6f5": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-023|bf87873c80498171": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-024|a687c7a8f9e9f352": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-025|430105fe1e48c2e6": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-026|ed7c5fb4c4281c5c": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-027|285fd3175d53472a": {
+  "faithfulness": 0.5,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-028|e92dc64cdd50ad67": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-029|0923e1a8fde112d3": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-030|d0890424a2def6c9": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-031|b6f0b9c0c23d5b50": {
+  "faithfulness": 0.8,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-032|5ae31d17ef6392ff": {
+  "faithfulness": 0.75,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-033|f037f403e5b12893": {
+  "faithfulness": 0.8,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-034|1630ee6cb07704fe": {
+  "faithfulness": 0.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-035|9fbaf648cb693dc2": {
+  "faithfulness": 0.875,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-036|a12303f3e0716e19": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-037|64ada311fd63fd9d": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-038|9c11a6a9c36a230f": {
+  "faithfulness": 0.8571428571428571,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-039|f73e03a468970358": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-040|4dceecea61d5fe7e": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-041|f165da5e78ea88dd": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-042|66456190d5bd4e93": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-043|1ef8714e94960012": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-044|e2fff3390bc306e5": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-045|947097ee1e7ed71d": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-046|ec42e9495ac913ef": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-047|f6243a6a59e7772d": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-048|91e62c7b860b2a08": {
+  "faithfulness": 0.8888888888888888,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-049|0aead731706b2607": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-050|4731a9b59d2f0826": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-051|94adc2458f5800c7": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-052|a715771cd376869f": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-053|f96823761aeea781": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-054|220f0913e033c254": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-055|336d655486849291": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-056|2eef0732f7593c06": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-057|920e831cf000deea": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E05|gt-058|28b5e5d07d992acd": {
+  "faithfulness": 0.875,
+  "judge_model": "mimo-v2.6-flash:free"
+ }
+}

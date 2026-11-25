@@ -1,0 +1,234 @@
+{
+ "E07|gt-001|8a605a5cc43b2970": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-002|6cab318834128b41": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-003|3243b5ce70b28d98": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-004|8212de58700f80fd": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-005|3967d41ae06451e3": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-006|df6fafce87bf0d18": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-007|0e92b4a81c1db076": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-008|4d24c2858aed02b2": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-009|f2e4b7fa271214c9": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-010|e86b1382b775b872": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-011|e639b34aca2e922a": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-012|1d7804000df478d6": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-013|5b8df5cfa48a311d": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-014|fe9c42214375b62d": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-015|3808d4dfa621f0c0": {
+  "faithfulness": 0.5,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-016|de39ae05cfe4a4d0": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-017|36f439e6e697e2e4": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-018|867eef424408723e": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-019|e64b4d1afc5f2021": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-020|33204c6f6819a133": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-021|a0b25b35f758e5a7": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-022|6e33b417b2b52c24": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-023|f2706928c54f0505": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-024|e3d170602e1c2c97": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-025|430105fe1e48c2e6": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-026|223477b61dd53120": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-027|a0058a4de918c3ef": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-028|88966ccf4658e9d4": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-029|921aae4964fd8f03": {
+  "faithfulness": 0.6666666666666666,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-030|d0890424a2def6c9": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-031|8fb9d5e441ab999e": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-032|31f6884df657afab": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-033|62eac8c155dbbba7": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-034|1630ee6cb07704fe": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-035|cbadf265d8753113": {
+  "faithfulness": 0.875,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-036|d404c30d98d6b386": {
+  "faithfulness": 0.9,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-037|e2cb4010303c666e": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-038|c3d6422464b965e4": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-039|42100341a6f01bcc": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-040|82567e8b3bafb0c2": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-041|2f3206b3ea5025d1": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-042|dd3a86284736e696": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-043|1ef8714e94960012": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-044|e2fff3390bc306e5": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-045|947097ee1e7ed71d": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-046|ec42e9495ac913ef": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-047|f6243a6a59e7772d": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-048|91e62c7b860b2a08": {
+  "faithfulness": 0.6666666666666666,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-049|514d5624ffb4b640": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-050|361b5d0a20d7886b": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-051|a8f9763238fac26a": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-053|eec4a671634f612d": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-054|1a114fd0406505f4": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-055|258132813fa89fa9": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-056|40e6684f22e22591": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-057|718be894fc9dba8f": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-058|855a6ecb6a4ed45f": {
+  "faithfulness": 1.0,
+  "judge_model": "mimo-v2.6-flash:free"
+ },
+ "E07|gt-052|d827998f0a037ce4": {
+  "faithfulness": 0.8571428571428571,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ }
+}

@@ -1,0 +1,214 @@
+{
+ "E13|gt-001|e78cbdc9ae014548": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-002|c03a734a4bb49cd1": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-003|0b309275bcb4b460": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-004|ad2fe3a67c73df97": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-005|d568d890bc59f4ed": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-008|328d59dce8d39e18": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-009|08629f303d4acae6": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-010|035ec19aadcccce7": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-011|d208cd98e55aa47a": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-012|ccde8b474f7361b8": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-013|765da0ccec19672e": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-014|fd98cc1f1780de65": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-016|81a32db868b70820": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-017|35d8672c84085436": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-018|027c376150aced3c": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-019|da43ff1b8148cda4": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-020|a7d3e7ae0dad411f": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-021|14d2a4c1ec557522": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-022|abcf76f5536c6118": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-023|a82708f604e27f0e": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-024|1dec6ff8b2556821": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-025|b956ef6b3d3b32be": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-026|2c2306b450eb7ddd": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-027|285fd3175d53472a": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-028|0d59004ed01e7b3b": {
+  "faithfulness": 0.6666666666666666,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-029|3062334b9e1c5f19": {
+  "faithfulness": 0.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-030|a1449e61d7f014ab": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-031|40b22d8998d475c2": {
+  "faithfulness": 0.75,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-032|811b09f07e957148": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-033|cd61eb671cc02a2f": {
+  "faithfulness": 0.8,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-034|03b0ac7f676f8184": {
+  "faithfulness": 0.75,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-035|5742b40093f2744c": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-036|a07842595d1ce73c": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-037|9c00f614ed4fdf8a": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-038|ccf0df5835bc44c7": {
+  "faithfulness": 0.7777777777777778,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-039|a72ccf2162f7fdfd": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-040|82567e8b3bafb0c2": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-042|e5c7f99027969853": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-044|e2fff3390bc306e5": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-045|947097ee1e7ed71d": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-046|7e7ee9c73fa33607": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-047|a016f6f4c957a62c": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-048|53ac06d68aae61d4": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-049|2cb630fbcaaaf1de": {
+  "faithfulness": 0.8,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-050|545fb2b45255e4f0": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-051|3236219da41f7c02": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-052|274b3976ed7fe5b0": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-053|6f6496848363d6f1": {
+  "faithfulness": 0.8571428571428571,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-054|0a0ed466b3dc68a9": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-055|f005be34dc360615": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-056|bcb13815d7f891da": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-057|add798f71729c3d2": {
+  "faithfulness": 0.5,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ },
+ "E13|gt-058|659b0938e8e5e770": {
+  "faithfulness": 1.0,
+  "judge_model": "rag-su/mimo-v2.6-flash:free"
+ }
+}
