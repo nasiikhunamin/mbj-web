@@ -5,11 +5,12 @@ Usage (from the repository root)::
     .venv310/bin/python scripts/check_generator.py
 
 Requires ``TOKENHARBOR_API_KEY`` in the project ``.env`` or the environment.
-The script checks three things:
+The script checks four things:
 
 1. the gateway accepts the request and echoes a model identity,
 2. an in-scope question is answered from the supplied context,
-3. an out-of-scope question returns the canonical refusal sentence.
+3. an out-of-scope question returns the canonical refusal sentence,
+4. a program-cost question redirects to WhatsApp (canonical refusal).
 """
 
 import sys
@@ -34,6 +35,18 @@ PROBE_CHUNK = RetrievedChunk(
     source_title="Panduan Pendaftaran (probe)",
 )
 
+COST_PROBE_CHUNK = RetrievedChunk(
+    chunk_id="probe-cost",
+    content=(
+        "Biaya program magang mencakup biaya pendaftaran, pelatihan bahasa Jepang, "
+        "pemeriksaan medis, pengurusan visa, dan administrasi lainnya."
+    ),
+    score=0.0,
+    doc_id="probe-cost",
+    source_type="web",
+    source_title="FAQ (probe)",
+)
+
 
 def main() -> int:
     client = GeneratorClient(config=GenerationConfig.from_env())
@@ -56,9 +69,17 @@ def main() -> int:
     print(f"  jawaban   : {out_of_scope.answer}")
     print(f"  penolakan : {out_of_scope.is_refusal}")
 
+    print("\n[3] Pertanyaan biaya program (harus diarahkan ke WhatsApp)...")
+    cost = client.generate("Berapa biaya program magang dan bisa dicicil?", [COST_PROBE_CHUNK])
+    print(f"  jawaban   : {cost.answer}")
+    print(f"  penolakan : {cost.is_refusal}")
+
     failed = False
     if out_of_scope.answer.strip() != REFUSAL_MESSAGE:
         print("\nGAGAL: jawaban out-of-scope tidak sama persis dengan kalimat penolakan baku.")
+        failed = True
+    if cost.answer.strip() != REFUSAL_MESSAGE:
+        print("\nGAGAL: pertanyaan biaya program tidak diarahkan ke WhatsApp (tidak pakai kalimat baku).")
         failed = True
     if in_scope.is_refusal:
         print("\nGAGAL: pertanyaan in-scope justru ditolak.")
