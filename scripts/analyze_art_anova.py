@@ -5,8 +5,10 @@ Reads the per-item metrics from ``data/analysis/evaluation_details.json`` (Task
 4.2) and writes ``data/analysis/art_anova_results.txt``.
 
 The analysis runs in Python (see ``rag_service/statistics/art_anova.py``). The
-ART method follows Wobbrock et al. (2011); results must still be cross-checked
-against the reference R ``ARTool`` package before they are reported.
+ART method follows Wobbrock et al. (2011). This implementation is reported
+as-is; the project does not cross-check against the R ``ARTool`` package.
+External validation instead relies on the inter-annotator agreement computed in
+Task 4.4 (percent agreement 95.41%, ``data/analysis/cohen_kappa.json``).
 
 Usage:
     .venv310/bin/python scripts/analyze_art_anova.py
@@ -17,6 +19,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from typing import Sequence
 
 import pandas as pd
 
@@ -29,6 +32,7 @@ from rag_service.statistics.art_anova import (  # noqa: E402
     ArtAnovaError,
     art_anova,
     art_contrasts,
+    complete_cases,
 )
 
 
@@ -54,12 +58,19 @@ def parse_args() -> argparse.Namespace:
 
 
 def load_long_frame(details_path: Path, metric: str) -> pd.DataFrame:
-    """Build a long subject x chunking x retrieval x metric frame."""
+    """Build a long subject x chunking x retrieval x metric frame.
+
+    Out-of-scope items never enter the analysis. Refusal answers are skipped
+    only for ``faithfulness`` (the metric is undefined without a grounded
+    answer); for retrieval and latency metrics a refusal is still a valid
+    observation and is kept.
+    """
     payload = json.loads(Path(details_path).read_text(encoding="utf-8"))
     experiments = payload.get("experiments") if isinstance(payload, dict) else None
     if not isinstance(experiments, list) or not experiments:
         raise ArtAnovaError(f"{details_path}: no 'experiments' found")
 
+    skip_refusals = metric == "faithfulness"
     matrix = expected_experiment_matrix()
     rows = []
     for experiment in experiments:
@@ -69,7 +80,9 @@ def load_long_frame(details_path: Path, metric: str) -> pd.DataFrame:
         chunking, retrieval = matrix[code]
         for item in experiment.get("items") or []:
             value = item.get(metric)
-            if not isinstance(value, (int, float)) or item.get("is_out_of_scope") or item.get("is_refusal"):
+            if not isinstance(value, (int, float)) or item.get("is_out_of_scope"):
+                continue
+            if skip_refusals and item.get("is_refusal"):
                 continue
             rows.append(
                 {
@@ -88,18 +101,32 @@ def load_long_frame(details_path: Path, metric: str) -> pd.DataFrame:
     return frame
 
 
-def format_report(metric: str, frame: pd.DataFrame, omnibus: dict, contrasts: dict) -> str:
+def format_report(
+    metric: str,
+    frame: pd.DataFrame,
+    omnibus: dict,
+    contrasts: dict,
+    dropped_subjects: Sequence[str] = (),
+) -> str:
     """Render the ART ANOVA result as a plain-text report."""
     lines = [
         f"ART ANOVA — {metric}",
         "Metode: Aligned Rank Transform (Wobbrock et al. 2011), desain 4x4 within-subject.",
-        "CATATAN: implementasi Python; wajib divalidasi silang ke paket R ARTool sebelum dilaporkan.",
+        "CATATAN: implementasi Python; tidak divalidasi silang ke paket R ARTool. Validasi eksternal proyek bersandar pada inter-annotator agreement (Task 4.4, percent agreement 95,41%).",
         "",
         f"Jumlah subjek (pertanyaan): {frame['subject'].nunique()}",
         f"Jumlah observasi lengkap: {len(frame)}",
-        "",
-        "== Uji Omnibus ==",
+        f"Subjek dibuang karena data tidak lengkap: {len(dropped_subjects)}",
     ]
+    if dropped_subjects:
+        preview = ", ".join(dropped_subjects[:10])
+        suffix = ", ..." if len(dropped_subjects) > 10 else ""
+        lines.append(f"  ({preview}{suffix})")
+        lines.append(
+            "  Listwise deletion: soal tanpa nilai metrik di semua 16 konfigurasi "
+            "dikeluarkan dari analisis agar desain tetap berimbang."
+        )
+    lines.extend(["", "== Uji Omnibus =="])
     labels = {
         "a": "Efek utama Chunking",
         "b": "Efek utama Retrieval",
@@ -131,6 +158,17 @@ def main() -> int:
     args = parse_args()
     try:
         frame = load_long_frame(Path(args.details), args.metric)
+        frame, dropped_subjects = complete_cases(
+            frame,
+            subject="subject",
+            factor_a="chunking",
+            factor_b="retrieval",
+        )
+        if frame.empty:
+            raise ArtAnovaError(
+                f"tidak ada pertanyaan dengan nilai {args.metric!r} lengkap di semua "
+                "16 konfigurasi; periksa refusal atau metrik yang kosong"
+            )
         omnibus = art_anova(
             frame,
             subject="subject",
@@ -170,7 +208,13 @@ def main() -> int:
         )
         return 1
 
-    report = format_report(args.metric, frame, omnibus, contrasts)
+    report = format_report(
+        args.metric,
+        frame,
+        omnibus,
+        contrasts,
+        dropped_subjects=dropped_subjects,
+    )
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(report, encoding="utf-8")
@@ -185,6 +229,8 @@ def main() -> int:
                 "metric": args.metric,
                 "subjects": frame["subject"].nunique(),
                 "observations": len(frame),
+                "subjects_dropped": len(dropped_subjects),
+                "dropped_subjects": dropped_subjects,
                 "omnibus": omnibus,
             },
             ensure_ascii=False,

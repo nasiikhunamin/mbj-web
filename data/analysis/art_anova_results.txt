@@ -1,0 +1,30 @@
+ART ANOVA — faithfulness
+Metode: Aligned Rank Transform (Wobbrock et al. 2011), desain 4x4 within-subject.
+CATATAN: implementasi Python; tidak divalidasi silang ke paket R ARTool. Validasi eksternal proyek bersandar pada inter-annotator agreement (Task 4.4, percent agreement 95,41%).
+
+Jumlah subjek (pertanyaan): 48
+Jumlah observasi lengkap: 768
+Subjek dibuang karena data tidak lengkap: 10
+  (gt-006, gt-007, gt-015, gt-034, gt-039, gt-041, gt-043, gt-047, gt-051, gt-056)
+  Listwise deletion: soal tanpa nilai metrik di semua 16 konfigurasi dikeluarkan dari analisis agar desain tetap berimbang.
+
+== Uji Omnibus ==
+  Efek utama Chunking: F = 4.8201, p = 0.003169 (signifikan)
+  Efek utama Retrieval: F = 0.9984, p = 0.395592 (tidak signifikan)
+  Interaksi Chunking x Retrieval: F = 2.2236, p = 0.019760 (signifikan)
+
+== Post-hoc Faktor Chunking (Benjamini-Hochberg) ==
+  fixed vs recursive: t = -1.5029, p = 0.139544, p_FDR = 0.209316 (tidak signifikan)
+  fixed vs semantic: t = 1.1959, p = 0.237728, p_FDR = 0.285274 (tidak signifikan)
+  fixed vs structure_aware: t = 1.9791, p = 0.053678, p_FDR = 0.107355 (tidak signifikan)
+  recursive vs semantic: t = 3.2241, p = 0.002300, p_FDR = 0.006900 (signifikan)
+  recursive vs structure_aware: t = 3.5639, p = 0.000851, p_FDR = 0.005108 (signifikan)
+  semantic vs structure_aware: t = 0.9946, p = 0.325001, p_FDR = 0.325001 (tidak signifikan)
+
+== Post-hoc Faktor Retrieval (Benjamini-Hochberg) ==
+  dense vs hybrid_rerank: t = 0.7545, p = 0.454318, p_FDR = 0.666440 (tidak signifikan)
+  dense vs hybrid_rrf: t = -1.1361, p = 0.261694, p_FDR = 0.592267 (tidak signifikan)
+  dense vs sparse_bm25: t = -0.3895, p = 0.698684, p_FDR = 0.698684 (tidak signifikan)
+  hybrid_rerank vs hybrid_rrf: t = -1.4185, p = 0.162642, p_FDR = 0.592267 (tidak signifikan)
+  hybrid_rerank vs sparse_bm25: t = -1.0565, p = 0.296133, p_FDR = 0.592267 (tidak signifikan)
+  hybrid_rrf vs sparse_bm25: t = 0.5940, p = 0.555366, p_FDR = 0.666440 (tidak signifikan)

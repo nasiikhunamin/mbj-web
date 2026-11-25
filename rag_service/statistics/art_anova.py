@@ -12,14 +12,16 @@ Post-hoc pairwise contrasts run paired t-tests on the aligned ranks and are
 corrected per family with Benjamini-Hochberg.
 
 Scientific caveat: this is an independent reimplementation, not the reference
-ARTool package. Results must be cross-checked against ARTool before they are
-reported in the thesis. See ``tasks/todo.md`` Task 4.5.
+ARTool package. Results are reported as-is without cross-checking against
+ARTool; the project's external validation relies on the inter-annotator
+agreement computed in Task 4.4 (percent agreement 95.41%).
+See ``tasks/todo.md`` Task 4.5.
 """
 
 from __future__ import annotations
 
 from itertools import combinations
-from typing import Any, Dict, List, Optional, Sequence
+from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
@@ -78,6 +80,47 @@ def _validate(data: pd.DataFrame, subject: str, factor_a: str, factor_b: str, va
             "design is unbalanced: every subject must appear in all "
             f"{expected_cells} factor combinations"
         )
+
+
+def complete_cases(
+    data: pd.DataFrame,
+    *,
+    subject: str,
+    factor_a: str,
+    factor_b: str,
+) -> Tuple[pd.DataFrame, List[str]]:
+    """Keep only subjects observed in every factor combination (listwise deletion).
+
+    The ART ANOVA requires a balanced within-subject design. When one metric is
+    missing for a configuration — for example a faithfulness score is skipped
+    because the system refused an in-domain question — dropping only that row
+    would leave the subject with fewer than ``n_a * n_b`` cells and the ANOVA
+    would fail. This helper removes the whole subject instead, so every retained
+    subject contributes exactly one observation per cell.
+
+    Returns ``(filtered_frame, dropped_subject_ids)``. The subject ids are
+    returned as strings so they can be written straight to JSON.
+    """
+    for column in (subject, factor_a, factor_b):
+        if column not in data.columns:
+            raise ArtAnovaError(f"missing required column: {column!r}")
+
+    frame = data[[subject, factor_a, factor_b]].dropna()
+    if frame.empty:
+        return data.iloc[0:0].copy(), []
+
+    levels_a = frame[factor_a].unique()
+    levels_b = frame[factor_b].unique()
+    expected_cells = len(levels_a) * len(levels_b)
+
+    cells = frame.drop_duplicates([subject, factor_a, factor_b])
+    per_subject = cells.groupby(subject).size()
+    complete = set(per_subject[per_subject == expected_cells].index)
+    all_subjects = set(frame[subject].unique())
+    dropped = sorted((str(value) for value in all_subjects - complete))
+
+    filtered = data[data[subject].isin(complete)].copy()
+    return filtered, dropped
 
 
 def _design(data: pd.DataFrame, factor_a: str, factor_b: str) -> pd.DataFrame:

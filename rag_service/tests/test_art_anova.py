@@ -11,6 +11,7 @@ from rag_service.statistics.art_anova import (
     art_anova,
     art_contrasts,
     benjamini_hochberg,
+    complete_cases,
 )
 
 
@@ -111,6 +112,60 @@ def test_art_anova_rejects_duplicate_cells():
     duplicated = pd.concat([frame, frame.iloc[[0]]], ignore_index=True)
     with pytest.raises(ArtAnovaError, match="exactly one observation"):
         analyse(duplicated)
+
+
+# ----------------------------------------------------------------------
+# Listwise deletion of incomplete subjects
+# ----------------------------------------------------------------------
+
+
+def test_complete_cases_drops_subject_missing_one_cell():
+    frame = make_frame()
+    missing = frame[
+        (frame["subject"] == "q00")
+        & (frame["chunking"] == "fixed")
+        & (frame["retrieval"] == "dense")
+    ].index
+    filtered, dropped = complete_cases(
+        frame.drop(index=missing),
+        subject="subject",
+        factor_a="chunking",
+        factor_b="retrieval",
+    )
+
+    assert dropped == ["q00"]
+    assert filtered["subject"].nunique() == 11
+    assert filtered.groupby("subject").size().eq(16).all()
+    # The filtered frame must satisfy the balanced-design requirement.
+    analyse(filtered)
+
+
+def test_complete_cases_keeps_balanced_frame_unchanged():
+    frame = make_frame()
+    filtered, dropped = complete_cases(
+        frame,
+        subject="subject",
+        factor_a="chunking",
+        factor_b="retrieval",
+    )
+
+    assert dropped == []
+    assert len(filtered) == len(frame)
+
+
+def test_complete_cases_returns_empty_when_every_subject_is_incomplete():
+    frame = make_frame()
+    # Remove a different cell from every subject so no subject is complete.
+    drop = frame.groupby("subject").head(1).index
+    filtered, dropped = complete_cases(
+        frame.drop(index=drop),
+        subject="subject",
+        factor_a="chunking",
+        factor_b="retrieval",
+    )
+
+    assert filtered.empty
+    assert len(dropped) == 12
 
 
 # ----------------------------------------------------------------------
