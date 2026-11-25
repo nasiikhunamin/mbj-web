@@ -1,0 +1,414 @@
+{
+  "generated_at": "2026-11-24T15:50:20.135691+00:00",
+  "input": "/home/nas/Downloads/laravel_app/data/analysis/cohen_kappa_annotations.csv",
+  "method": "Percent agreement (primary) with Cohen's kappa (chance-corrected, supplementary)",
+  "target_kappa": 0.7,
+  "target_agreement": 0.9,
+  "bootstrap_iterations": 2000,
+  "seed": 42,
+  "rows_used": 370,
+  "percent_agreement": {
+    "value": 0.9540540540540541,
+    "percentage": 95.4054054054054,
+    "ci95": [
+      0.9297297297297298,
+      0.972972972972973
+    ],
+    "interpretation": "excellent",
+    "target": 0.9,
+    "meets_target": true
+  },
+  "overall": {
+    "n": 370,
+    "observed_agreement": 0.9540540540540541,
+    "expected_agreement": 0.9137326515704893,
+    "kappa": 0.46740050804403127,
+    "ci95": [
+      0.22899758719017274,
+      0.6529080675422131
+    ],
+    "agreement_ci95": [
+      0.9297297297297298,
+      0.972972972972973
+    ],
+    "interpretation": "moderate",
+    "target": 0.7,
+    "meets_target": false,
+    "confusion": {
+      "both_1": 345,
+      "both_0": 8,
+      "human_1_judge_0": 17,
+      "human_0_judge_1": 0
+    }
+  },
+  "by_experiment": {
+    "E01": {
+      "n": 24,
+      "observed_agreement": 1.0,
+      "expected_agreement": 0.9201388888888891,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "interpretation": "almost perfect",
+      "target": 0.7,
+      "meets_target": true,
+      "confusion": {
+        "both_1": 23,
+        "both_0": 1,
+        "human_1_judge_0": 0,
+        "human_0_judge_1": 0
+      }
+    },
+    "E02": {
+      "n": 27,
+      "observed_agreement": 1.0,
+      "expected_agreement": 1.0,
+      "kappa": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "interpretation": "tidak terdefinisi",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 27,
+        "both_0": 0,
+        "human_1_judge_0": 0,
+        "human_0_judge_1": 0
+      }
+    },
+    "E03": {
+      "n": 20,
+      "observed_agreement": 0.95,
+      "expected_agreement": 0.95,
+      "kappa": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "agreement_ci95": [
+        0.85,
+        1.0
+      ],
+      "interpretation": "slight",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 19,
+        "both_0": 0,
+        "human_1_judge_0": 1,
+        "human_0_judge_1": 0
+      }
+    },
+    "E04": {
+      "n": 20,
+      "observed_agreement": 0.85,
+      "expected_agreement": 0.85,
+      "kappa": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "agreement_ci95": [
+        0.7,
+        1.0
+      ],
+      "interpretation": "slight",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 17,
+        "both_0": 0,
+        "human_1_judge_0": 3,
+        "human_0_judge_1": 0
+      }
+    },
+    "E05": {
+      "n": 27,
+      "observed_agreement": 1.0,
+      "expected_agreement": 1.0,
+      "kappa": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "interpretation": "tidak terdefinisi",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 27,
+        "both_0": 0,
+        "human_1_judge_0": 0,
+        "human_0_judge_1": 0
+      }
+    },
+    "E06": {
+      "n": 28,
+      "observed_agreement": 1.0,
+      "expected_agreement": 1.0,
+      "kappa": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "interpretation": "tidak terdefinisi",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 28,
+        "both_0": 0,
+        "human_1_judge_0": 0,
+        "human_0_judge_1": 0
+      }
+    },
+    "E07": {
+      "n": 20,
+      "observed_agreement": 1.0,
+      "expected_agreement": 0.905,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "interpretation": "almost perfect",
+      "target": 0.7,
+      "meets_target": true,
+      "confusion": {
+        "both_1": 19,
+        "both_0": 1,
+        "human_1_judge_0": 0,
+        "human_0_judge_1": 0
+      }
+    },
+    "E08": {
+      "n": 23,
+      "observed_agreement": 1.0,
+      "expected_agreement": 1.0,
+      "kappa": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "interpretation": "tidak terdefinisi",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 23,
+        "both_0": 0,
+        "human_1_judge_0": 0,
+        "human_0_judge_1": 0
+      }
+    },
+    "E09": {
+      "n": 23,
+      "observed_agreement": 1.0,
+      "expected_agreement": 0.9168241965973536,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "interpretation": "almost perfect",
+      "target": 0.7,
+      "meets_target": true,
+      "confusion": {
+        "both_1": 22,
+        "both_0": 1,
+        "human_1_judge_0": 0,
+        "human_0_judge_1": 0
+      }
+    },
+    "E10": {
+      "n": 22,
+      "observed_agreement": 0.8636363636363636,
+      "expected_agreement": 0.7892561983471075,
+      "kappa": 0.35294117647058815,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "agreement_ci95": [
+        0.7272727272727273,
+        1.0
+      ],
+      "interpretation": "fair",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 18,
+        "both_0": 1,
+        "human_1_judge_0": 3,
+        "human_0_judge_1": 0
+      }
+    },
+    "E11": {
+      "n": 25,
+      "observed_agreement": 0.92,
+      "expected_agreement": 0.92,
+      "kappa": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "agreement_ci95": [
+        0.8,
+        1.0
+      ],
+      "interpretation": "slight",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 23,
+        "both_0": 0,
+        "human_1_judge_0": 2,
+        "human_0_judge_1": 0
+      }
+    },
+    "E12": {
+      "n": 26,
+      "observed_agreement": 0.9230769230769231,
+      "expected_agreement": 0.9230769230769231,
+      "kappa": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "agreement_ci95": [
+        0.8076923076923077,
+        1.0
+      ],
+      "interpretation": "slight",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 24,
+        "both_0": 0,
+        "human_1_judge_0": 2,
+        "human_0_judge_1": 0
+      }
+    },
+    "E13": {
+      "n": 21,
+      "observed_agreement": 0.8571428571428571,
+      "expected_agreement": 0.8571428571428571,
+      "kappa": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "agreement_ci95": [
+        0.6666666666666666,
+        1.0
+      ],
+      "interpretation": "slight",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 18,
+        "both_0": 0,
+        "human_1_judge_0": 3,
+        "human_0_judge_1": 0
+      }
+    },
+    "E14": {
+      "n": 20,
+      "observed_agreement": 0.85,
+      "expected_agreement": 0.85,
+      "kappa": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "agreement_ci95": [
+        0.7,
+        1.0
+      ],
+      "interpretation": "slight",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 17,
+        "both_0": 0,
+        "human_1_judge_0": 3,
+        "human_0_judge_1": 0
+      }
+    },
+    "E15": {
+      "n": 23,
+      "observed_agreement": 1.0,
+      "expected_agreement": 0.7126654064272211,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "interpretation": "almost perfect",
+      "target": 0.7,
+      "meets_target": true,
+      "confusion": {
+        "both_1": 19,
+        "both_0": 4,
+        "human_1_judge_0": 0,
+        "human_0_judge_1": 0
+      }
+    },
+    "E16": {
+      "n": 21,
+      "observed_agreement": 1.0,
+      "expected_agreement": 1.0,
+      "kappa": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "interpretation": "tidak terdefinisi",
+      "target": 0.7,
+      "meets_target": false,
+      "confusion": {
+        "both_1": 21,
+        "both_0": 0,
+        "human_1_judge_0": 0,
+        "human_0_judge_1": 0
+      }
+    }
+  }
+}
